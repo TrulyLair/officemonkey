@@ -11,10 +11,13 @@ function createSummaryBar() {
       let providerName = providerMatch[1] || providerMatch[3];
       let rating = parseInt(providerMatch[2] || "-" + providerMatch[4], 10);
       if (!providers[providerName]) {
-        providers[providerName] = { totalRating: 0, count: 0 };
+        providers[providerName] = { totalRating: 0, count: 0, hasNegative: false };
       }
       providers[providerName].totalRating += rating;
       providers[providerName].count++;
+      if (rating < 0) {
+        providers[providerName].hasNegative = true;
+      }
     }
   });
 
@@ -25,7 +28,7 @@ function createSummaryBar() {
   let summaryBar = $y('<div id="summaryBar" style="padding: 10px; background-color: #f0f0f0;"></div>');
   sortedProviders.forEach(providerName => {
     let avgRating = (providers[providerName].totalRating / providers[providerName].count).toFixed(1);
-    let ratingEmoji = avgRating >= 0 ? '👍 (' + providers[providerName].count + ')' : '👎 (' + providers[providerName].count + ')';
+    let ratingEmoji = providers[providerName].hasNegative ? '👎 (' + providers[providerName].count + ')' : (avgRating >= 0 ? '👍 (' + providers[providerName].count + ')' : '👎 (' + providers[providerName].count + ')');
     summaryBar.append('<div>' + providerName + ': ' + ratingEmoji + '</div>');
   });
 
