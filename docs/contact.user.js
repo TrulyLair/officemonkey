@@ -29,8 +29,39 @@ function init(e) {
   GM.addStyle(`#topALSearch {position: absolute; background-color: white; border: 2px; padding: 20px; top: 10px; z-index: 10002; display: none}`);
   GM.addStyle(`#topALSearch input[type='text'] { border: 2px; font-size: 36pt; padding: 20px; }`);
 
+  // Create summary bar function
+  function createSummaryBar() {
+    let providers = {};
+    // Find all notes and extract provider names and ratings
+    $y('div[id^="note_"]').each(function() {
+      let noteText = $y(this).text();
+      let providerMatch = noteText.match(/Provider: (\w+)/);
+      let ratingMatch = noteText.match(/Rating: ([-+]?\d+)/);
+      if (providerMatch && ratingMatch) {
+        let providerName = providerMatch[1];
+        let rating = parseInt(ratingMatch[1], 10);
+        if (!providers[providerName]) {
+          providers[providerName] = { totalRating: 0, count: 0 };
+        }
+        providers[providerName].totalRating += rating;
+        providers[providerName].count++;
+      }
+    });
+
+    // Create the summary bar element
+    let summaryBar = $y('<div id="summaryBar" style="padding: 10px; background-color: #f0f0f0;"></div>');
+    $y.each(providers, function(providerName, data) {
+      let avgRating = (data.totalRating / data.count).toFixed(1);
+      summaryBar.append('<div>' + providerName + ': ' + avgRating + '</div>');
+    });
+
+    // Append the summary bar to the sidebar
+    $y('#sidebar').append(summaryBar);
+  }
+
   // we're here, we're ready, don't fuckin' stop us
   $y(document).ready(function() {
+    createSummaryBar(); // Call the function to create the summary bar
     // are there notes on the page?
     if ($y('#Note_contact')) {
       const NOTES = $y('div[id^="note_"]');
