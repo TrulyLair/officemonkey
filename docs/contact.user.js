@@ -6,24 +6,21 @@ function createSummaryBar() {
   // Find all notes and extract provider names and ratings
   $y('div.OneContactNoteSubject').each(function() {
     let noteText = $y(this).text();
-    let providerMatch = noteText.match(/(\w+)\s\+(\d+)|(\w+)\s\-(\d+)|(\w+)\sNO/gi); // Updated regular expression
-    if (providerMatch) {
-      for (let i = 1; i < providerMatch.length; i += 2) {
-        if (providerMatch[i]) {
-          let providerName = providerMatch[i];
-          let rating = providerMatch[i + 1] ? parseInt(providerMatch[i + 1], 10) : -3;
-          if (!providers[providerName]) {
-            providers[providerName] = { totalRating: 0, count: 0, hasNegative: false, latestRating: 0 };
-          }
-          providers[providerName].totalRating += rating;
-          providers[providerName].count++;
-          if (rating < 0) {
-            providers[providerName].hasNegative = true;
-            providers[providerName].latestRating = rating;
-          } else {
-            providers[providerName].latestRating = Math.max(providers[providerName].latestRating, rating);
-          }
-        }
+    let providerRegex = /(\w+)\s\+(\d+)|(\w+)\s\-(\d+)|(\w+)\sNO/gi;
+    let providerMatch;
+    while ((providerMatch = providerRegex.exec(noteText)) !== null) {
+      let providerName = providerMatch[1] || providerMatch[3] || providerMatch[5];
+      let rating = providerMatch[2] ? parseInt(providerMatch[2], 10) : (providerMatch[4] ? -parseInt(providerMatch[4], 10) : -3);
+      if (!providers[providerName]) {
+        providers[providerName] = { totalRating: 0, count: 0, hasNegative: false, latestRating: 0 };
+      }
+      providers[providerName].totalRating += rating;
+      providers[providerName].count++;
+      if (rating < 0) {
+        providers[providerName].hasNegative = true;
+        providers[providerName].latestRating = rating;
+      } else {
+        providers[providerName].latestRating = Math.max(providers[providerName].latestRating, rating);
       }
     }
   });
