@@ -1,4 +1,4 @@
-// ... rest of the code ...
+// ... entire file content ...
 
 // Create summary bar function
 function createSummaryBar() {
@@ -11,12 +11,15 @@ function createSummaryBar() {
       let providerName = providerMatch[1] || providerMatch[3];
       let rating = parseInt(providerMatch[2] || "-" + providerMatch[4], 10);
       if (!providers[providerName]) {
-        providers[providerName] = { totalRating: 0, count: 0, hasNegative: false };
+        providers[providerName] = { totalRating: 0, count: 0, hasNegative: false, latestRating: 0 };
       }
       providers[providerName].totalRating += rating;
       providers[providerName].count++;
       if (rating < 0) {
         providers[providerName].hasNegative = true;
+        providers[providerName].latestRating = rating;
+      } else {
+        providers[providerName].latestRating = Math.max(providers[providerName].latestRating, rating);
       }
     }
   });
@@ -27,13 +30,14 @@ function createSummaryBar() {
   // Create the summary bar element
   let summaryBar = $y('<div id="summaryBar" style="padding: 10px; background-color: #f0f0f0;"></div>');
   sortedProviders.forEach(providerName => {
-    let avgRating = (providers[providerName].totalRating / providers[providerName].count).toFixed(1);
-    let ratingEmoji = providers[providerName].hasNegative ? '👎 (' + providers[providerName].count + ')' : (avgRating >= 0 ? '👍 (' + providers[providerName].count + ')' : '👎 (' + providers[providerName].count + ')');
-    summaryBar.append('<div>' + providerName + ': ' + ratingEmoji + '</div>');
+    let avgRating = Math.round(providers[providerName].totalRating / providers[providerName].count);
+    let ratingDisplay = providers[providerName].hasNegative ? providers[providerName].latestRating : avgRating;
+    let ratingColor = providers[providerName].hasNegative ? 'color: red;' : '';
+    summaryBar.append('<div style="' + ratingColor + '">' + providerName + ': ' + ratingDisplay + '</div>');
   });
 
   // Append the summary bar to the sidebar
   $y('#sidebar').prepend(summaryBar);
 }
 
-// ... rest of the code ...
+// ... entire file content ...
