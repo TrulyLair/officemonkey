@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OfficeMonkey & Co.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script>
+        function copyToClip(str) {
+            function listener(e) {
+                e.clipboardData.setData("text/plain", str);
+                e.preventDefault();
+            }
+        document.addEventListener("copy", listener);
+        document.execCommand("copy");
+        document.removeEventListener("copy", listener);
+    }
+
+    </script>
+</head>
+
+<body>
+    <section class="section">
+        <div class="content">
+            <h1 class="title">Useful scripts and tools for certain sites</h1>
+        </div>
+        <div class="content">
+            This is where you get useful information and links for installing...
+            <ol>
+                <li>the calendar <a href="#calendar_userscript">userscript</a></li>
+                <li>the contact <a href="#contact_userscript">userscript</a></li>
+            </ol>
+        </div>
+    </section>
+
+    <hr>
+    <section class="section" id="calendar_userscript">
+        <div class="content">
+            <h1>Calendar Userscript</h1>
+        </div>
+        <div class="content">
+            <ol>
+                <li>First, install the <a href="https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag?hl=en">ViolentMonkey browser extension</a>.</li>
+                <li>Click to open <a href="calendar.user.js">the userscript</a></li>
+                <li>You should see a banner at the top of the page with a "Confirm installation" button. GO FOR IT.</li>
+                <li>Now go to the Schedule page in That App We Use. You should see a nice calendar below the events list.</li>
+            </ol>
+    </section>
+    <section class="section" id="contact_userscript">
+        <div class="content">
+            <h1>Contact Userscript</h1>
+        </div>
+        <div class="content">
+            <ol>
+                <li>You've already installed the Calendar userscript above, right?</li>
+                <li>Click to open <a href="contact.user.js">the userscript</a></li>
+                <li>You should see a banner at the top of the page with a "Confirm installation" button. GO FOR IT.</li>
+                <li>Now go to any contact page in That App We Use. You should see their Notes ordered with the most recent <i>first</i>, as they should be!</li>
+            </ol>
+    </section>
+    <hr>
+    <section class="section">
+        <div class="content">
+            <h2 class="title">
+                What's new and lovely?
+            </h1>
+        </div>
+        <div class="content">
+            <h3 class="subtitle">Sept 18, 2023</h3>
+            <p>The "Send Email" bookmarklet functionality is now built into the Contact script, which means the whole bookmarklet can go away - it's all uterscripts now!</p>
+            <p>To send an email, go to the relevant Contact page and then click the email address in question. The script will then do its thing the same way that the bookmarklet did, with one minor change: the first line of the pasting text has been removed so that the formatting is correct.</p>
+        </div>
+        <div class="content">
+            <h3 class="subtitle">Aug 10, 2023</h3>
+            <p>Calendar: out with Haven House, in with Temescal House.</p>
+            <p>A couple of little search improvements:</p>
+            <ul>
+                <li>Contact ID search now does an exact match, so you can search for three-digit IDs without also finding a bunch of four-digit IDs.</li>
+                <li>Phone number searches only show the records with matching digits at the <b>end</b> of the phone number. (Yes, this feature was coded two years ago. I didn't realise that it stopped working somehow. But it's fixed now.)</li>
+            </ul>
+        </div>
+        <div class="content">
+            <h3 class="subtitle">Feb 19, 2023</h3>
+            <p>Calendar no longer creates &amp; shows buffer events. Tweaked the formatting a little: tooltip has a shadow, and the calendar header shows the day of the week.</p>
+        </div>
+        <div class="content">
+            <h3 class="subtitle">Jan 25, 2023</h3>
+            <p>No more reaching for the calculator! When you enter an <b>Amt Booked</b>, there'll be a button next to the <b>Amt Collected</b> that shows the 22.5% amount. Click it, and it'll fill the amount for you. If you want a different amount, just ignore it.</p>
+        </div>
+        <div class="content">
+            <h3 class="subtitle">June 6, 2022</h3>
+            <p>Fixed the Send Email bookmarklet to work better on Firefox. <b>Note: you'll need to update the bookmarklet manually:</b> Click the green "Click this here button" button to copy the new code. Right-click the bookmarklet, choose "Edit", then clear out the old URL and paste in the new code.</p>
+            <p>Contact notes should have a properly reversed order now: two notes from the same date should have the later note <i>above</i> the lower note.</p>
+        </div>
+        <div class="content">
+            <h3 class="subtitle">April 13, 2022</h3>
+            <p>Contact script now searches for Contact IDs as well. Searches that start with a period (e.g. <code>.1234</code> ) will be considered contact IDs.</p>
+            <p>Searches using TopSearch are described at the top of the search results.</p>
+        </div>
+        <div class="content">
+            <h3 class="subtitle">August 4, 2021</h3>
+            <p>Calendar now shows 15 minute buffer events after each event. Events are constrained to half the house column width. 
+            <p>Contact script now:</p>
+            <ul>
+                <li>Contains the magic of <b>Top Search</b>! Hit the "/" key on any page and you'll see a big white text box at the top of the page. Type some digits in and hit return; it'll do a search for a phone number. Type some text and it'll search for email.</li>
+                <li>Searches for phone digits will remove all results where the phone number doesn't <b>end</b> in the query digits.</li>
+                <li>Moving the mouse over table rows in most tables will highlight those rows in yellow. Click anywhere in the row - not just the page icon - to go to the page.</li>
+                <li>The form for a new note appears at the top of the note list, not the bottom.</li>
+            </ul>
+            <p>Both scripts <i>should</i> auto-update from now on. ViolentMonkey will check for an update once a day.</p>
+        </div>
+        <div class="content">
+            <h3 class="subtitle">July 11, 2021</h3>
+            <p>Added the Contact userscript, which (at the moment) just orders Notes the right way.</p>
+        </div>
+        <div class="content">
+            <h3 class="subtitle">April 16, 2020</h3>
+            <p>Added better installation instructions for the Calendar userscript. (I added the calendar userscript itself a month ago but forgot to update the What's New section. Oops.)</p>
+        </div>
+        <div class="content">
+            <h3 class="subtitle">May 30, 2019</h3>
+            <p>Updated locations. ABOUT BLOODY TIME.</p>
+        </div>
+        <div class="content">
+            <h3 class="subtitle">October 10, 2018</h3>
+            <p>No more dollar sign in the rate. Plus, the installer button changes on click!
+                (Yay for actual user testing.)</p>
+        </div>
+        <div class="content">
+            <h3 class="subtitle">October 9, 2018</h3>
+            <p>A nice pile of goodies!</p>
+            <ul>
+                <li>When you click the bookmarklet, it checks a few things:
+                    <ul>
+                        <li>that you're on the right kind of page</li>
+                        <li>that the contact has at least one email address</li>
+                        <li>that their latest booking isn't in the past</li>
+                    </ul>
+                </li>
+                <li>If a contact has multiple email addresses, the bookmarklet will pop up a
+                    little message inviting you to click on the email
+                    address you want to send to, and it'll do the rest.</li>
+                <li>The subject line for the email should be correct for the booking
+                    location.</li>
+                <li>Best of all: you know the details block you need to paste together
+                    out of all the individual details of the booking? Well, <b>the
+                    bookmarklet now makes it all for you, and sticks it on your
+                    clipboard.</b> You just have to hit <b>Ctrl-V</b> and it'll paste
+                    it into the email.
+                </li>
+            </ul>
+            <p>Thing is, I've done a little testing but it probably still has some
+                bugs. Please double-check the stuff it puts in the email, especially
+                the email address, the subject line and the details block. If you
+                spot any problems, tell Amy. Thank you!
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+            </p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p><a href="{CIJOBURL}">Built for commit {CSHA} - at least, it would be, if templating worked again</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
