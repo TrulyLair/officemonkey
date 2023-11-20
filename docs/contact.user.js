@@ -54,7 +54,10 @@ function init(e) {
   });
 }
 
-// Create summary bar function
+ // Create a summary bar in the top left of the contact page sidebar that displays 
+ // the providers who've seen this client, and the average rating of the client.                  
+ // It calculates the provider's average rating by scanning the Notes, but overrides 
+ // that average if the last rating from that provider is negative.                                                       
 function createSummaryBar() {
   let providers = {};
   // Find all notes and extract provider names and ratings
