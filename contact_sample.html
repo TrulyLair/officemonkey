@@ -1,0 +1,2609 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <title>Amy's Lair</title>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="tinfoil-site-verification" content="ae50f54fc5aa529657ebfcabce35954fd5da5042">
+
+    <base href="">
+
+    
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <link href="css/dropmenu.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/prototip.css">
+    <link href="css/Forums.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css">
+
+    
+    <script type="text/javascript" src="js_app.js"></script>
+    <script type="text/javascript" src="js_calendar_pop/calendar_MYSQL.js"></script>
+    <script type="text/javascript" src="js_ajax/prototype.js"></script>
+    <script type="text/javascript" src="js/prototip/prototip.js"></script><script type="text/javascript" src="https://safeoffice.com/js/prototip/styles.js"></script>
+    <script type="text/javascript" src="js_ajax/scriptaculous.js"></script><script type="text/javascript" src="https://safeoffice.com/js_ajax/builder.js"></script><script type="text/javascript" src="https://safeoffice.com/js_ajax/effects.js"></script><script type="text/javascript" src="https://safeoffice.com/js_ajax/dragdrop.js"></script><script type="text/javascript" src="https://safeoffice.com/js_ajax/controls.js"></script><script type="text/javascript" src="https://safeoffice.com/js_ajax/slider.js"></script><script type="text/javascript" src="https://safeoffice.com/js_ajax/sound.js"></script>
+    <script type="text/javascript" src="js_ajax/control.modal.js"></script>
+
+    
+
+    <style>
+
+#header
+{
+	border-top-color	: ; 
+	border-bottom-color	: ; 
+	background-color	: ;
+	color				: #FFFFFF;
+	background-image:url('graphics/BACKGROUND_COLOURBOX6637350_480x480_Edit1.jpg');
+}
+
+#ActionBar a, #ActionBar a:link, #ActionBar a:visited
+{
+	color				: #FFFFFF;
+}
+
+#TopDropMenu li 		
+{
+	background-color	: ;
+	background-image:url('graphics/BACKGROUND_Button_MidGray_1x25.jpg');
+}
+
+#TopDropMenu a, #TopDropMenu a:visited
+{
+	color				: #C0D9D9;
+	background-image:url('graphics/BACKGROUND_Button_MidGray_1x25.jpg');
+}
+
+
+
+#BotDropMenu a, #BotDropMenu a:visited
+{
+	color				: ;
+	background-image:url('graphics/BACKGROUND_ButtonLight2_1x25.jpg');
+}
+
+#BotDropMenu a.selected, #BotDropMenu a.selected:visited, #BotDropMenu a.selected:hover, #BotDropMenu a.selected:active
+{
+	color					: ;
+	background-color	: ;
+		background-image:url('graphics/BACKGROUND_FFFFFF.png');
+}
+
+#BotDropMenu li
+{
+	background-color	: ;
+	background-image:url('graphics/BACKGROUND_ButtonLight2_1x25.jpg');
+}
+
+#BotDropMenu li.fly
+{
+	background-color	: ;
+	background-image:url('graphics/BACKGROUND_ButtonLight2_1x25.jpg');
+}
+
+#PageContent
+{
+	
+}
+
+
+
+#TopDropMenu a.selected, #TopDropMenu a.selected:visited, #TopDropMenu a.selected:hover, #TopDropMenu a.selected:active	
+{
+	background-color	: #778899;
+	color				: ;
+			border-bottom		: 1px solid #778899;
+		background-image:url('graphics/BACKGROUND_Texture_Blue.jpg');
+	
+}
+
+#Folder
+{
+	background-color	: #778899;
+	background-image:url('graphics/BACKGROUND_Texture_Blue.jpg');
+}
+
+#footer
+{
+	background-color	: #778899;
+	color				: ;
+	background-image:url('graphics/BACKGROUND_Texture_Blue.jpg');
+}
+
+#footer div
+{
+	background-color	: #778899;
+	background-image:url('graphics/BACKGROUND_Texture_Blue.jpg');
+}
+
+#footer a
+{
+	color				: ;
+}
+
+
+
+div.block
+{
+	background-color	: #FFFFFF;
+	color				: ;
+	
+}
+
+.HoverTip
+{
+	color				: ;
+}
+
+#BotDropMenu .Ghosted, #BotDropMenu a.Ghosted, #BotDropMenu a.Ghosted:visited
+{
+	background-color	: #888888;
+	color					: #FF0000;
+	
+}
+</style>
+<style id="VMst0.41287908917430105">.hoverHighlight {background-color: yellow; cursor: pointer}</style><style id="VMst0.5011041635550315">#topALSearch {position: absolute; background-color: white; border: 2px; padding: 20px; top: 10px; z-index: 10002; display: none}</style><style id="VMst0.13672844348428992">#topALSearch input[type='text'] { border: 2px; font-size: 36pt; padding: 20px; }</style></head>
+
+<body><div id="topALSearch"><input type="text"></div>
+
+<div id="header">
+    <div id="HeaderWidthHolder">
+        <div id="CompanyName">
+            <table>
+                <tbody><tr height="55">
+                                                                        <td valign="bottom">
+                                <a href="index.php"><img src="media/Logo_SO-424.png" height="55px;" width="150px;" border="0"></a>
+                            </td>
+                            <td valign="bottom">
+			<span class="TagLine">
+				<div> ™&nbsp;</div>
+			</span>
+                            </td>
+                                                            </tr>
+            </tbody></table>
+        </div>
+
+        <div id="ActionBar" class="TopMatte" style="z-index:200;">
+                                                                                                                                                                                                                        <a href="javascript:Form.reset('Form_UploadFile');ToggleDatabox('UploadFileDatabox');">Upload
+                            File</a>
+                        -
+                                                                                                <a href="LinkedAcctJump.php" class="PmModal">Linked Portals</a>
+                        -
+                                                                        <a href="Contact.php?ttab=HM&amp;btab=3">Contact Us</a>
+                -
+                <a href="TellFriend.php?ttab=HM&amp;btab=3">Tell A Friend</a>
+                -
+                <a href="javascript:OpenHelp(&quot;Master_Help&quot;)">Help</a>
+                -
+                <a href="Logout.php">Log Out</a>
+                                    </div>
+                <div id="UserIdentity">
+            <div id="UserIdentity_inner">
+                                    Amy's Lair / amy@amys-lair.com
+                    <br>
+                    2023-11-19  9:51 PM
+                            </div>
+        </div>
+
+
+                                                                    <div id="TopTabOut" style="position: relative; z-index:100;">
+            <div id="TopTabIn">
+                <div id="TopDropMenuContainer">
+                                            <ul id="TopDropMenu">
+                                                                                                <li><a href="index.php?ttab=HM&amp;btab=1">Home</a></li>
+                                                                                                    <li>
+                                        <a href="SearchContact.php?SearchType=QUICK&amp;ct=ALL_CONTACT&amp;ttab=CM&amp;btab=4" class="selected">Contacts</a>
+                                    </li>
+                                                                                                    <li>
+                                        <a href="ApptCal.php?ttab=AP&amp;btab=2">Schedule</a>
+                                    </li>
+                                                                                                    <li>
+                                        <a href="OverviewFS.php?ttab=FS&amp;btab=1">Files</a>
+                                    </li>
+                                                                                                    <li>
+                                        <a href="OverviewEM.php?ttab=EM&amp;btab=1">Email</a>
+                                    </li>
+                                                                                                    <li>
+                                        <a href="OverviewCO.php?ttab=CO&amp;btab=1">Community</a>
+                                    </li>
+                                                                                                                                    <li>
+                                        <a href="OverviewAC.php?ttab=AC&amp;btab=1">Accounting</a>
+                                    </li>
+                                                                                                    <li>
+                                        <a href="#nogo">More</a>
+                                        <!--[if lte IE 6]>
+                                        <table>
+                                            <tr>
+                                                <td><![endif]-->
+                                        <ul>
+                                            <li>
+                                                <a href="OverviewMC_PWT.php?ttab=MC_PWT&amp;btab=1" class="fly">Passwords</a></li>
+                                            <li>
+                                                <a href="OverviewMC_BMS.php?ttab=MC_BMS&amp;btab=1" class="fly">Bookmarks</a></li>
+                                            <li><a href="OverviewMC_TAG.php?ttab=MC_TAG&amp;btab=1" class="fly">Tags</a></li>
+                                            <li><a href="OverviewMC_BOOKING_FORM.php?ttab=MC_CONTACTFORM&amp;btab=1" class="fly">Booking Form</a></li>
+                                        </ul>
+                                        <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                                    </li>
+                                                                                                    <li>
+                                        <a href="OverviewAM.php?ttab=AM&amp;btab=1">Admin</a>
+                                    </li>
+                                                                                    </ul>
+                                     </div>
+                <div class="Xclear"></div>
+            </div>
+        </div>
+
+        <div id="Folder" style="position: relative; z-index:1;">
+            <div id="BotTabOut" style="position: relative; z-index:100;">                 <div id="BotTabIn">
+                    <div id="BotDropMenuContainer">
+                        <ul id="BotDropMenu">
+                                                                                                	
+	<li><a href="OverviewCM.php?ttab=CM&amp;btab=1" class=" ">Overview</a></li>
+
+	
+
+				<li><a href="#nogo" class=" ">Add<!--[if IE 7]><!--></a><!--<![endif]-->
+			<!--[if lte IE 6]><table><tr><td><![endif]-->
+			<ul>
+				<li><a href="AddContact.php?ct=PERSON&amp;ttab=CM&amp;btab=3" class="">Add Person</a></li>
+				<li><a href="AddContact.php?ct=COMPANY&amp;ttab=CM&amp;btab=3" class="">Add Company</a></li>
+			</ul>
+			<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+		</li>
+
+
+				<li><a href="#nogo" class="selected ">Search<!--[if IE 7]><!--></a><!--<![endif]-->
+			<!--[if lte IE 6]><table><tr><td><![endif]-->
+			<ul>
+				<li><a href="SearchContact.php?SearchType=LIST&amp;Lines=100&amp;ct=ALL_CONTACT&amp;pg=1&amp;ttab=CM&amp;btab=4" class="">List</a></li>
+				<li><a href="SearchContact.php?SearchType=QUICK&amp;ct=ALL_CONTACT&amp;ttab=CM&amp;btab=4" class="">Filter (popular)</a></li>
+				<li><a href="ReferenceSearchContacts.php?ttab=CM&amp;btab=4">Reference</a></li>
+				<li><a href="SearchContact.php?SearchType=ADVANCED&amp;ct=ALL_CONTACT&amp;ttab=CM&amp;btab=4" class="">Advanced</a></li>
+                                                                				<li><a href="TagListing.php?module=contact&amp;ttab=CM&amp;btab=4" class="">List By Tag</a></li>
+
+									<li class="fly"><a href="#nogo">Recent<!--[if IE 7]><!--></a><!--<![endif]-->
+						<!--[if lte IE 6]><table><tr><td><![endif]-->
+						<ul>
+																																		<li><a href="ViewContact.php?cid=93822&amp;ttab=CM&amp;btab=4">Joe BV</a></li>
+																												<li><a href="ViewContact.php?cid=93913&amp;ttab=CM&amp;btab=4">Aaron</a></li>
+																												<li><a href="ViewContact.php?cid=281275&amp;ttab=CM&amp;btab=4">Aaron</a></li>
+																												<li><a href="ViewContact.php?cid=159785&amp;ttab=CM&amp;btab=4">aaron</a></li>
+																												<li><a href="ViewContact.php?cid=83920&amp;ttab=CM&amp;btab=4">Amy Golden</a></li>
+																												<li><a href="ViewContact.php?cid=873936&amp;ttab=CM&amp;btab=4">Duane BV</a></li>
+																												<li><a href="ViewContact.php?cid=837656&amp;ttab=CM&amp;btab=4">Larry</a></li>
+																												<li><a href="ViewContact.php?cid=814650&amp;ttab=CM&amp;btab=4">Ben</a></li>
+																												<li><a href="ViewContact.php?cid=590702&amp;ttab=CM&amp;btab=4">Graham</a></li>
+																												<li><a href="ViewContact.php?cid=494236&amp;ttab=CM&amp;btab=4">Steven</a></li>
+																												<li><a href="ViewContact.php?cid=877096&amp;ttab=CM&amp;btab=4">Dan</a></li>
+																												<li><a href="ViewContact.php?cid=887054&amp;ttab=CM&amp;btab=4">Terry</a></li>
+																												<li><a href="ViewContact.php?cid=889514&amp;ttab=CM&amp;btab=4">Angel</a></li>
+																												<li><a href="ViewContact.php?cid=889506&amp;ttab=CM&amp;btab=4">Melina Lairette</a></li>
+																												<li><a href="ViewContact.php?cid=882402&amp;ttab=CM&amp;btab=4">Roberto</a></li>
+																												<li><a href="ViewContact.php?cid=889544&amp;ttab=CM&amp;btab=4">Jason</a></li>
+																												<li><a href="ViewContact.php?cid=598216&amp;ttab=CM&amp;btab=4">Mark/Marco BV</a></li>
+																												<li><a href="ViewContact.php?cid=889864&amp;ttab=CM&amp;btab=4">Edgar</a></li>
+																												<li><a href="ViewContact.php?cid=890346&amp;ttab=CM&amp;btab=4">Juan</a></li>
+																												<li><a href="ViewContact.php?cid=93940&amp;ttab=CM&amp;btab=4">Kevin BV</a></li>
+																			</ul>
+						<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+					</li>
+							</ul>
+			<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+		</li>
+
+
+
+				<li><a href="#nogo" class=" ">Reports<!--[if IE 7]><!--></a><!--<![endif]-->
+			<!--[if lte IE 6]><table><tr><td><![endif]-->
+			<ul>
+				<li><a href="SearchContact.php?SearchType=LIST&amp;Lines=100&amp;ct=CT_USER&amp;ma=&amp;pg=1&amp;ttab=CM&amp;btab=5" class="">System User Report</a></li>
+				<li><a href="RptRecentChanges.php?Module=CONTACT&amp;ttab=CM&amp;btab=5" class="">Change Audit</a></li>
+				<li><a href="RptAccessHist.php?ttab=CM&amp;btab=5" class="">Access History</a></li>
+
+
+								<li class="fly"><a href="#nogo" class="">Duplicates<!--[if IE 7]><!--></a><!--<![endif]-->
+					<!--[if lte IE 6]><table><tr><td><![endif]-->
+					<ul>
+						<li><a href="DuplicateCheck.php?type=phone&amp;ttab=CM&amp;btab=5" class="">Duplicate Phones</a></li>
+						<li><a href="DuplicateCheck.php?type=email&amp;ttab=CM&amp;btab=5" class="">Duplicate Emails</a></li>
+						<li><a href="DuplicateCheck.php?type=name&amp;ttab=CM&amp;btab=5" class="">Duplicate Names</a></li>
+					</ul>
+					<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+				</li>
+					</ul>
+			<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+		</li>
+
+
+
+				<li><a href="#nogo" class=" ">Utilities<!--[if IE 7]><!--></a><!--<![endif]-->
+			<!--[if lte IE 6]><table><tr><td><![endif]-->
+			<ul>
+				<li><a href="EmailList.php?ttab=CM&amp;btab=6" class="">Email Lists</a></li>
+				<li><a href="ContactUpload.php?ttab=CM&amp;btab=6&amp;dmPrefix=CM_Upload" class="">Data Upload</a></li>
+				<li><a href="BlackberryDump.php?ttab=CM&amp;btab=6&amp;dmPrefix=CM_Download" class="">Data Download</a></li>
+			</ul>
+			<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+		</li>
+
+
+				<li><a href="#nogo" class=" ">Setup<!--[if IE 7]><!--></a><!--<![endif]-->
+			<!--[if lte IE 6]><table><tr><td><![endif]-->
+			<ul>
+				<li><a href="OwnerOpts.php?ttab=CM&amp;btab=7" class="">Usage Options</a></li>
+				<li><a href="ListDropTables.php?ttab=CM&amp;btab=7" class="">Dropdown Lists</a></li>
+				<li><a href="SetupPref.php?t=TabContact&amp;ttab=CM&amp;btab=7" class="">Preferences</a></li>
+					</ul>
+			<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+		</li>
+	<!----------------------->
+<!--   END MenuMain    -->
+<!----------------------->
+                                                                                    </ul>
+                    </div> <!-- BotDropMenuContainer -->
+                </div> <!-- BotTabIn -->
+            </div> <!-- BotTabOut -->
+            <div class="Xclear"></div>
+
+            <div id="PageContent" style="position: relative; z-index:1;">
+                                                            <div id="UploadFileDatabox" class="DataboxOuter" style="display:none">
+                            <div id="UploadFileForm">
+	<form id="Form_UploadFile" action="UploadFile.php" method="post" enctype="MULTIPART/FORM-DATA">
+		<h2>Upload a File</h2>
+		<div style="border: 1px solid #1D3A44;">
+			<table>
+				<tbody><tr>
+					<th id="HB_FILEUPLOAD_SelectFile">File</th>
+					<script type="text/javascript" language="javascript">
+	new Tip('HB_FILEUPLOAD_SelectFile', {
+		
+		target: $('HB_FILEUPLOAD_SelectFile'),
+		ajax: {
+			url: 'ToolTipText.php?p=HB_FILEUPLOAD_SelectFile'
+		},
+		hook: { target: 'bottomRight', tip: 'topLeft' },
+		width: 'auto',
+		border: 2,
+		radius: 1
+	});
+		
+</script>
+					<td>
+						<!-- MAX_FILE_SIZE 10MB -->
+												<input type="hidden" name="MAX_FILE_SIZE" value="20971520">
+						<input type="FILE" class="InputField" name="UploadedFileName">
+					</td>
+				</tr>
+				<tr>
+					<th id="HB_FILEUPLOAD_UserFriendlyName">File Name</th>
+					<script type="text/javascript" language="javascript">
+	new Tip('HB_FILEUPLOAD_UserFriendlyName', {
+		
+		target: $('HB_FILEUPLOAD_UserFriendlyName'),
+		ajax: {
+			url: 'ToolTipText.php?p=HB_FILEUPLOAD_UserFriendlyName'
+		},
+		hook: { target: 'bottomRight', tip: 'topLeft' },
+		width: 'auto',
+		border: 2,
+		radius: 1
+	});
+		
+</script>
+					<td>
+						<input type="text" class="InputField" name="FileUpload_FriendlyName" maxlen="255">
+					</td>
+				</tr>
+				<tr>
+					<th id="HB_FILEUPLOAD_Comment">Comment</th>
+					<script type="text/javascript" language="javascript">
+	new Tip('HB_FILEUPLOAD_Comment', {
+		
+		target: $('HB_FILEUPLOAD_Comment'),
+		ajax: {
+			url: 'ToolTipText.php?p=HB_FILEUPLOAD_Comment'
+		},
+		hook: { target: 'bottomRight', tip: 'topLeft' },
+		width: 'auto',
+		border: 2,
+		radius: 1
+	});
+		
+</script>
+					<td>
+						<input type="text" class="InputField" name="FileUpload_Comment" maxlen="255">
+					</td>
+				</tr>
+				<tr>
+					<th id="HB_FILEUPLOAD_Tags">Tags</th>
+					<script type="text/javascript" language="javascript">
+	new Tip('HB_FILEUPLOAD_Tags', {
+		
+		target: $('HB_FILEUPLOAD_Tags'),
+		ajax: {
+			url: 'ToolTipText.php?p=HB_FILEUPLOAD_Tags'
+		},
+		hook: { target: 'bottomRight', tip: 'topLeft' },
+		width: 'auto',
+		border: 2,
+		radius: 1
+	});
+		
+</script>
+					<td>
+						<input type="text" class="InputField" name="Tags" maxlen="255" value="">
+					</td><td>
+				</td></tr>
+			</tbody></table>
+		</div>
+		<div id="GoButton_FileUpload" class="clear Small" style="padding-top: 10px;">
+			<a class="button" href="javascript:document.forms['Form_UploadFile'].submit();UpdateContent('GoButton_FileUpload','Processing...');"><span>Save</span></a> - 
+			<a href="javascript:Form.reset('Form_UploadFile');ToggleDatabox('UploadFileDatabox');">Cancel</a>
+		</div>
+	</form>
+</div>
+
+                        </div>
+                                                                    <table>
+                    <tbody><tr>
+                                                    <td id="sidebar" style="width:170px; padding-right:10px;" valign="top">
+                                                                    <h2> Options</h2>
+
+<div id="Side_Detail"></div>
+
+<div class="block">
+
+
+	<h3 style="margin-bottom:3px;">Add a New...</h3>
+					
+																		
+							<div id="Sidebar_board">
+							<a href="javascript:$('boardList').show();$('board_NEWITEM').show();AjaxUpdate('board_NEWITEM','EditBoard.php?cid=93822&amp;e=1');">Network</a>
+				</div>
+													
+																		
+							<div id="Sidebar_contacttype">
+							<a href="javascript:$('contacttypeList').show();$('contacttype_NEWITEM').show();AjaxUpdate('contacttype_NEWITEM','EditContacttype.php?cid=93822&amp;e=1');">Contact Type</a>
+				</div>
+										
+																		
+							<div id="Sidebar_email">
+							<a href="javascript:$('emailList').show();$('email_NEWITEM').show();AjaxUpdate('email_NEWITEM','EditEmail.php?cid=93822&amp;e=1');">Email Address</a>
+				</div>
+										
+																		
+							<div id="Sidebar_note">
+			                                                        									<a href="javascript:AjaxUpdate('NewNote_contact','EditNote.php?t=contact&amp;rid=93822&amp;e=1')">Note</a>
+				                                                        				</div>
+										
+																													
+																												
+																		
+							<div id="Sidebar_phone">
+							<a href="javascript:$('phoneList').show();$('phone_NEWITEM').show();AjaxUpdate('phone_NEWITEM','EditPhone.php?cid=93822&amp;e=1');">Phone Number</a>
+				</div>
+													
+																		
+							<div id="Sidebar_website">
+							<a href="javascript:$('websiteList').show();$('website_NEWITEM').show();AjaxUpdate('website_NEWITEM','EditWebsite.php?cid=93822&amp;e=1');">Website</a>
+				</div>
+							
+		
+			<div id="Sidebar_permission" class="ToggleMe" style="display:none">
+			<hr>
+							<a href="PermToContact.php?cid=93822&amp;ad=A">Add As User</a>
+					</div>
+	<div style="text-align: right">
+	<a id="SideBarToggle" href="javascript:MoreLessSideBarToggle(&quot;Less&quot;)"><img src="graphics/More.png" height="24px" width="24px" border="0"></a>
+</div>
+	
+<h3 style="margin-bottom:3px; margin-top:10px;">Connect...</h3>
+	<select name="conn_drop" id="conn_drop" style="width:125px" onchange="
+			// Reset Drop List to ''
+			UpdateMainDetail($F('conn_drop'));
+			var options = $$('select#conn_drop option');
+			options[0].selected = true;
+		">
+		<option value=""></option>
+					<option value="EditConnect.php?sr1=contact&amp;id1=93822&amp;sr2=contact&amp;e=1">Contact</option>
+							<option value="EditConnect.php?sr1=contact&amp;id1=93822&amp;sr2=userfile&amp;e=1">File</option>
+							<option value="EditConnect.php?sr1=contact&amp;id1=93822&amp;sr2=appt&amp;e=1">Event</option>
+							<option value="EditConnect.php?sr1=contact&amp;id1=93822&amp;sr2=actTransH&amp;e=1">Accounting</option>
+							<option value="EditConnect.php?sr1=contact&amp;id1=93822&amp;sr2=bookmark&amp;e=1">Bookmark</option>
+							<option value="EditConnect.php?sr1=contact&amp;id1=93822&amp;sr2=pw&amp;e=1">Password</option>
+			</select>
+ 	
+<h3 style="margin-bottom:3px; margin-top:10px;">Schedule New...</h3>
+	<div><a href="AddAppt.php?cid=93822&amp;act=ac">Event</a></div>
+
+
+	<h3 style="margin-bottom:3px; margin-top:20px;">Utilities</h3>
+	<div><a href="DeleteContact.php?cid=93822" onclick="return ConfirmDelete()">Delete</a></div>
+	<div><a href="javascript:AjaxUpdate('contact_93822','CopyMove.php?from_cid=93822&amp;table=contact&amp;orig_id=93822&amp;move=1')">Merge</a></div>
+	<div><a href="ChangeEntity.php?cid=93822" onclick="return confirm('Change this contact to a Company?')">Change To Company</a></div>
+	<div><a href="ReviewFormPreFill.php?t=BPF&amp;cid=93822" onclick="return confirm('Report Blacklist Incident?')">Report to Blacklist</a></div>
+	
+
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+</div>
+
+
+
+                                                            </td>
+                                                <td id="MainContent" valign="top">
+                                
+<h2 id="ContactFullName" style="width:800px;">
+            Joe BV
+
+    <div style="float:right;">
+                    <a href="SearchForm.php?st=FileToProfile&amp;in=1&amp;mw=1&amp;sid=93822" class="FileSearchModal">                                    <img src="graphics/IconPerson.png" border="1px" height="25px">
+                                </a>                </div>
+
+            <span class="Small">
+                    
+    </span>
+    
+</h2>
+
+
+<div id="Main_Detail"></div>
+
+
+<h3>Person</h3>
+<div class="DataboxContainer">
+    <div class="OneLinerLeft DataboxHeader"><div class="OneView OneLiner DataboxHeader">View</div><div class="OneContactLineEntity OneLiner DataboxHeader">Entity</div><div class="OneContactLineName OneLiner DataboxHeader">Name</div><div class="OneContactLineGender OneLiner DataboxHeader">Gender</div><div class="OneContactLineRating OneLiner DataboxHeader">Rating</div></div><div class="OneLinerRight DataboxHeader"><div class="OneLinerComment OneLiner DataboxHeader">Comment</div><div class="OneEnder DataboxHeader">Δ</div></div>
+    <div id="contact_93822">
+        <div class="OneLinerLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('contact_93822','EditContact.php?cid=93822&amp;pv=0&amp;ln=1')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactLineEntity OneLiner"><span id="Entity93822" class="HoverTip"><img src="graphics/IconPerson.png" height="13px" border="0"></span><script type="text/javascript" language="javascript">
+					new Tip('Entity93822', 'Person', { width: '100px', border: 2, radius: 1 });
+				</script></div><div class="OneContactLineName OneLiner"><a href="ViewContact.php?cid=93822">Joe BV</a></div><div class="OneContactLineGender OneLiner">Male</div><div class="OneContactLineRating OneLiner"><span style="color: #00CC00">+2 Fair</span></div></div><div class="OneLinerRight"><div class="OneLinerComment OneLiner">B &amp; V Verified, from a country, tan/olive skin, 5'8", 40's, S &amp; P hair</div><div class="OneEnder"><span id="ModIconContact93822" class="HoverTip">Δ</span></div></div>
+
+    </div>
+</div>
+
+                
+                
+
+	
+		
+	
+
+	
+	
+	
+	
+
+
+
+	
+	
+	
+			<div id="contacttypeList" class="SideboxOuter" style="display:none">
+
+	<h3 style="width: 200px;">
+		Contact Type 
+			</h3>
+	<span class="Small"></span>
+
+	<div class="DataboxContainer">
+		<div class="OneLinerLeft DataboxHeader"><div class="OneView OneLiner DataboxHeader">View</div><div class="OneContactContactType OneLiner DataboxHeader">Type</div></div><div class="OneLinerRight DataboxHeader"><div class="OneLinerComment OneLiner DataboxHeader">Comment</div><div class="OneEnder DataboxHeader">Δ</div></div>
+		<!-- Drag/Drop Container -->
+		<div id="contacttype_DragDrop" class="SideboxInnerDragDrop" style="z-index:100;"></div> <!-- END id='contacttype_DragDrop' -->
+		
+		<div id="contacttype_NEWITEM"></div>
+	</div>
+		
+	<span id="contacttype_workingMsg" class="Small" style="display:none;">Updating database...</span>
+</div> <!-- END id='contacttypeList' -->
+
+<!-- Drag & Drop -->
+<script type="text/javascript" language="javascript">
+	Position.includeScrollOffsets = false;
+	Sortable.create('contacttype_DragDrop',{tag:'div',onUpdate:Update_contacttype});
+	
+function Update_contacttype(container) {
+	var url = 'Ajax_ReorderList.php';
+	var params = Sortable.serialize(container.id);
+	params += '&c='+ container.id + '&t=contacttype';
+	var ajax = new Ajax.Request(url,{
+		method: 'post',
+		parameters: params,
+		onLoading: function(){$('contacttype_workingMsg').show()},
+		onLoaded: function(){$('contacttype_workingMsg').hide()}
+	});
+}
+</script>
+
+ <!-- End Drag & Drop -->
+	
+	
+	
+	
+	
+
+
+			<div id="phoneList" class="SideboxOuter">
+
+	<h3 style="width: 200px;">
+		Phone Numbers 
+			</h3>
+	<span class="Small"></span>
+
+	<div class="DataboxContainer">
+		<div class="OneLinerLeft DataboxHeader"><div class="OneView OneLiner DataboxHeader">View</div><div class="OneContactPhoneType OneLiner DataboxHeader">Type</div><div class="OneContactPhoneNumber OneLiner DataboxHeader">Number</div></div><div class="OneLinerRight DataboxHeader"><div class="OneLinerComment OneLiner DataboxHeader">Comment</div><div class="OneEnder DataboxHeader">Δ</div></div>
+		<!-- Drag/Drop Container -->
+		<div id="phone_DragDrop" class="SideboxInnerDragDrop" style="z-index:100;"><div id="phone_69647" class="SortItem RowOdd" style="position: relative;">
+										<div class="OneLinerLeft"><div class="OneView OneLiner"><a class="OneLiner OneView" href="javascript:AjaxUpdate('phone_69647','EditPhone.php?cid=93822&amp;phid=69647')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a> </div><div class="OneContactPhoneType OneLiner ">Mobile</div><div class="OneContactPhoneNumber OneLiner ">415/123-4567</div></div><div class="OneLinerRight"><div class="OneLinerComment OneLiner">&nbsp;</div><div class="OneEnder"><span id="ModIconphone69647" class="HoverTip">Δ</span></div></div>
+				</div></div> <!-- END id='phone_DragDrop' -->
+		
+		<div id="phone_NEWITEM"></div>
+	</div>
+		
+	<span id="phone_workingMsg" class="Small" style="display:none;">Updating database...</span>
+</div> <!-- END id='phoneList' -->
+
+<!-- Drag & Drop -->
+<script type="text/javascript" language="javascript">
+	Position.includeScrollOffsets = false;
+	Sortable.create('phone_DragDrop',{tag:'div',onUpdate:Update_phone});
+	
+function Update_phone(container) {
+	var url = 'Ajax_ReorderList.php';
+	var params = Sortable.serialize(container.id);
+	params += '&c='+ container.id + '&t=phone';
+	var ajax = new Ajax.Request(url,{
+		method: 'post',
+		parameters: params,
+		onLoading: function(){$('phone_workingMsg').show()},
+		onLoaded: function(){$('phone_workingMsg').hide()}
+	});
+}
+</script>
+
+ <!-- End Drag & Drop -->
+	
+	
+	
+	
+
+	
+	
+	
+	
+
+
+
+		
+	
+	
+
+	
+	
+	
+	
+
+
+
+	
+	
+	
+
+	
+			<div id="emailList" class="SideboxOuter" style="display:none">
+
+	<h3 style="width: 200px;">
+		Email Addresses 
+			</h3>
+	<span class="Small"></span>
+
+	<div class="DataboxContainer">
+		<div class="OneLinerLeft DataboxHeader"><div class="OneView OneLiner DataboxHeader">View</div><div class="OneContactEmailType OneLiner DataboxHeader">Type</div><div class="OneContactEmailAddr OneLiner DataboxHeader">Email</div></div><div class="OneLinerRight DataboxHeader"><div class="OneLinerComment OneLiner DataboxHeader">Comment</div><div class="OneEnder DataboxHeader">Δ</div></div>
+		<!-- Drag/Drop Container -->
+		<div id="email_DragDrop" class="SideboxInnerDragDrop" style="z-index:100;"></div> <!-- END id='email_DragDrop' -->
+		
+		<div id="email_NEWITEM"></div>
+	</div>
+		
+	<span id="email_workingMsg" class="Small" style="display:none;">Updating database...</span>
+</div> <!-- END id='emailList' -->
+
+<!-- Drag & Drop -->
+<script type="text/javascript" language="javascript">
+	Position.includeScrollOffsets = false;
+	Sortable.create('email_DragDrop',{tag:'div',onUpdate:Update_email});
+	
+function Update_email(container) {
+	var url = 'Ajax_ReorderList.php';
+	var params = Sortable.serialize(container.id);
+	params += '&c='+ container.id + '&t=email';
+	var ajax = new Ajax.Request(url,{
+		method: 'post',
+		parameters: params,
+		onLoading: function(){$('email_workingMsg').show()},
+		onLoaded: function(){$('email_workingMsg').hide()}
+	});
+}
+</script>
+
+ <!-- End Drag & Drop -->
+		
+	
+	
+
+
+
+	
+	
+	
+
+	
+	
+		
+	
+
+
+
+	
+	
+	
+
+	
+	
+	
+		
+
+
+
+	
+	
+	
+
+	
+	
+	
+	
+			<div id="websiteList" class="SideboxOuter" style="display:none">
+
+	<h3 style="width: 200px;">
+		Websites 
+			</h3>
+	<span class="Small"></span>
+
+	<div class="DataboxContainer">
+		<div class="OneLinerLeft DataboxHeader"><div class="OneView OneLiner DataboxHeader">View</div><div class="OneContactWebSite OneLiner DataboxHeader">Website</div></div><div class="OneLinerRight DataboxHeader"><div class="OneLinerComment OneLiner DataboxHeader">Comment</div><div class="OneEnder DataboxHeader">Δ</div></div>
+		<!-- Drag/Drop Container -->
+		<div id="website_DragDrop" class="SideboxInnerDragDrop" style="z-index:100;"></div> <!-- END id='website_DragDrop' -->
+		
+		<div id="website_NEWITEM"></div>
+	</div>
+		
+	<span id="website_workingMsg" class="Small" style="display:none;">Updating database...</span>
+</div> <!-- END id='websiteList' -->
+
+<!-- Drag & Drop -->
+<script type="text/javascript" language="javascript">
+	Position.includeScrollOffsets = false;
+	Sortable.create('website_DragDrop',{tag:'div',onUpdate:Update_website});
+	
+function Update_website(container) {
+	var url = 'Ajax_ReorderList.php';
+	var params = Sortable.serialize(container.id);
+	params += '&c='+ container.id + '&t=website';
+	var ajax = new Ajax.Request(url,{
+		method: 'post',
+		parameters: params,
+		onLoading: function(){$('website_workingMsg').show()},
+		onLoaded: function(){$('website_workingMsg').hide()}
+	});
+}
+</script>
+
+ <!-- End Drag & Drop -->
+	
+
+
+	
+	
+			<div id="boardList" class="SideboxOuter" style="display:none">
+
+	<h3 style="width: 200px;">
+		Networks 
+			</h3>
+	<span class="Small"></span>
+
+	<div class="DataboxContainer">
+		<div class="OneLinerLeft DataboxHeader"><div class="OneView OneLiner DataboxHeader">View</div><div class="OneContactBoardType OneLiner DataboxHeader">Network</div><div class="OneContactBoardHandle OneLiner DataboxHeader">Handle</div></div><div class="OneLinerRight DataboxHeader"><div class="OneLinerComment OneLiner DataboxHeader">Comment</div><div class="OneEnder DataboxHeader">Δ</div></div>
+		<!-- Drag/Drop Container -->
+		<div id="board_DragDrop" class="SideboxInnerDragDrop" style="z-index:100;"></div> <!-- END id='board_DragDrop' -->
+		
+		<div id="board_NEWITEM"></div>
+	</div>
+		
+	<span id="board_workingMsg" class="Small" style="display:none;">Updating database...</span>
+</div> <!-- END id='boardList' -->
+
+<!-- Drag & Drop -->
+<script type="text/javascript" language="javascript">
+	Position.includeScrollOffsets = false;
+	Sortable.create('board_DragDrop',{tag:'div',onUpdate:Update_board});
+	
+function Update_board(container) {
+	var url = 'Ajax_ReorderList.php';
+	var params = Sortable.serialize(container.id);
+	params += '&c='+ container.id + '&t=board';
+	var ajax = new Ajax.Request(url,{
+		method: 'post',
+		parameters: params,
+		onLoading: function(){$('board_workingMsg').show()},
+		onLoaded: function(){$('board_workingMsg').hide()}
+	});
+}
+</script>
+
+ <!-- End Drag & Drop -->
+	
+		
+
+	
+	
+	
+	
+
+
+
+	
+	
+	
+
+		
+	
+	
+	
+
+
+                                                    <div id="ConnDatabox" class="DataboxOuter">
+                        	<div id="ConnListToggle" class="SideboxOuter" style="display:none">
+
+	<h3>
+		Connections
+		<span class="Small"></span>
+	</h3>
+	<div class="DataboxContainer">
+		<div class="OneLinerLeft DataboxHeader">
+							<div class="OneView OneLiner DataboxHeader">View</div>
+						<div class="OneContactConnectSource OneLiner DataboxHeader">Source</div>
+			<div class="OneContactConnectName OneLiner DataboxHeader">Item</div>
+		</div>
+		<div class="OneLinerRight DataboxHeader">
+			<div class="OneLinerComment OneLiner DataboxHeader">Comment</div>
+			<div class="OneEnder DataboxHeader">
+									Δ
+							</div>
+		</div>
+		<div id="ConnListbox">
+					</div>	
+	</div> <!-- END DataboxContainer -->
+</div> <!-- END ConnListToggle -->
+                    </div>
+                
+                                                            <div id="ApptDatabox" class="DataboxOuter">
+                            
+<h3>
+			Events
+		<span class="Small"></span>
+</h3>
+
+
+<div id="Report">
+	<table cellpadding="0" cellspacing="0" width="800px">
+		<tbody><tr>
+			<th class="OneView">View</th>
+			<th>Type</th>
+			<th>Date</th>
+			<th>Day</th>
+			<th>Time</th>
+			<th>Duration</th>
+			<th>Location</th>
+			<th>Type</th>
+			<th>Status</th>
+			<th>Internal</th>
+			<th>External</th>
+			<th>Booked</th>
+			<th>Δ</th>
+		</tr>
+
+			<tr class="RowOdd">
+			<td><center><a href="ViewAppt.php?aid=359926"><img src="graphics/View.png" height="15px" border="0"></a></center></td>
+			<td>
+				Temescal Companionship
+			</td>
+			<td nowrap="">
+				2023-10-31
+			</td>
+			<td nowrap="">
+				Tue
+			</td>
+			<td nowrap="">
+				12:30 PM
+									PDT
+							</td>
+			<td nowrap="">
+				0.50
+			</td>
+			<td nowrap="">
+				 
+			</td>
+			<td nowrap="">
+				Incall
+			</td>
+			<td nowrap="">
+				<span style="color: #000000">Complete</span>
+			</td>
+			<td nowrap="">
+															</td>
+
+			<td nowrap="">
+																	<a href="ViewContact.php?cid=889506">Melina Lairette</a><br>
+							</td>
+
+			<td nowrap="">
+				$220
+			</td>
+						<td>
+				<span id="ModTipAppt359926" class="HoverTip">Δ</span>
+			</td>
+			<script type="text/javascript" language="javascript">
+	new Tip('ModTipAppt359926', {
+		
+		target: $('ModTipAppt359926'),
+		ajax: {
+			url: 'ModTipText.php?t=appt&id=359926&ic='
+		},
+		hook: { target: 'leftMiddle', tip: 'rightMiddle' },
+		width: 'auto',
+		border: 2,
+		radius: 1
+	});
+		
+</script>
+		</tr>
+			<tr class="RowEven">
+			<td><center><a href="ViewAppt.php?aid=357139"><img src="graphics/View.png" height="15px" border="0"></a></center></td>
+			<td>
+				Lake Companionship
+			</td>
+			<td nowrap="">
+				2023-09-14
+			</td>
+			<td nowrap="">
+				Thu
+			</td>
+			<td nowrap="">
+				11:00 AM
+									PDT
+							</td>
+			<td nowrap="">
+				1.00
+			</td>
+			<td nowrap="">
+				 
+			</td>
+			<td nowrap="">
+				Incall
+			</td>
+			<td nowrap="">
+				<span style="color: #17A4DF">Complete and Verified</span>
+			</td>
+			<td nowrap="">
+															</td>
+
+			<td nowrap="">
+																	<a href="ViewContact.php?cid=884734">Vicky Lairette</a><br>
+							</td>
+
+			<td nowrap="">
+				$300
+			</td>
+						<td>
+				<span id="ModTipAppt357139" class="HoverTip">Δ</span>
+			</td>
+			<script type="text/javascript" language="javascript">
+	new Tip('ModTipAppt357139', {
+		
+		target: $('ModTipAppt357139'),
+		ajax: {
+			url: 'ModTipText.php?t=appt&id=357139&ic='
+		},
+		hook: { target: 'leftMiddle', tip: 'rightMiddle' },
+		width: 'auto',
+		border: 2,
+		radius: 1
+	});
+		
+</script>
+		</tr>
+			<tr class="RowOdd">
+			<td><center><a href="ViewAppt.php?aid=355185"><img src="graphics/View.png" height="15px" border="0"></a></center></td>
+			<td>
+				Lake Companionship
+			</td>
+			<td nowrap="">
+				2023-08-10
+			</td>
+			<td nowrap="">
+				Thu
+			</td>
+			<td nowrap="">
+				12:45 PM
+									PDT
+							</td>
+			<td nowrap="">
+				1.00
+			</td>
+			<td nowrap="">
+				 
+			</td>
+			<td nowrap="">
+				Incall
+			</td>
+			<td nowrap="">
+				<span style="color: #17A4DF">Complete and Verified</span>
+			</td>
+			<td nowrap="">
+															</td>
+
+			<td nowrap="">
+																	<a href="ViewContact.php?cid=884734">Vicky Lairette</a><br>
+							</td>
+
+			<td nowrap="">
+				$300
+			</td>
+						<td>
+				<span id="ModTipAppt355185" class="HoverTip">Δ</span>
+			</td>
+			<script type="text/javascript" language="javascript">
+	new Tip('ModTipAppt355185', {
+		
+		target: $('ModTipAppt355185'),
+		ajax: {
+			url: 'ModTipText.php?t=appt&id=355185&ic='
+		},
+		hook: { target: 'leftMiddle', tip: 'rightMiddle' },
+		width: 'auto',
+		border: 2,
+		radius: 1
+	});
+		
+</script>
+		</tr>
+			<tr class="RowEven">
+			<td><center><a href="ViewAppt.php?aid=353805"><img src="graphics/View.png" height="15px" border="0"></a></center></td>
+			<td>
+				Lake Companionship
+			</td>
+			<td nowrap="">
+				2023-07-18
+			</td>
+			<td nowrap="">
+				Tue
+			</td>
+			<td nowrap="">
+				 1:00 PM
+									PDT
+							</td>
+			<td nowrap="">
+				1.00
+			</td>
+			<td nowrap="">
+				 
+			</td>
+			<td nowrap="">
+				Incall
+			</td>
+			<td nowrap="">
+				<span style="color: #17A4DF">Complete and Verified</span>
+			</td>
+			<td nowrap="">
+															</td>
+
+			<td nowrap="">
+																	<a href="ViewContact.php?cid=836193">Leila Lairette</a><br>
+							</td>
+
+			<td nowrap="">
+				$300
+			</td>
+						<td>
+				<span id="ModTipAppt353805" class="HoverTip">Δ</span>
+			</td>
+			<script type="text/javascript" language="javascript">
+	new Tip('ModTipAppt353805', {
+		
+		target: $('ModTipAppt353805'),
+		ajax: {
+			url: 'ModTipText.php?t=appt&id=353805&ic='
+		},
+		hook: { target: 'leftMiddle', tip: 'rightMiddle' },
+		width: 'auto',
+		border: 2,
+		radius: 1
+	});
+		
+</script>
+		</tr>
+			<tr class="RowOdd">
+			<td><center><a href="ViewAppt.php?aid=341915"><img src="graphics/View.png" height="15px" border="0"></a></center></td>
+			<td>
+				Lake Companionship
+			</td>
+			<td nowrap="">
+				2022-12-19
+			</td>
+			<td nowrap="">
+				Mon
+			</td>
+			<td nowrap="">
+				12:30 PM
+									PDT
+							</td>
+			<td nowrap="">
+				1.00
+			</td>
+			<td nowrap="">
+				 
+			</td>
+			<td nowrap="">
+				Incall
+			</td>
+			<td nowrap="">
+				<span style="color: #17A4DF">Complete and Verified</span>
+			</td>
+			<td nowrap="">
+															</td>
+
+			<td nowrap="">
+																	<a href="ViewContact.php?cid=872400">Solene (Soh-Len)</a><br>
+							</td>
+
+			<td nowrap="">
+				$300
+			</td>
+						<td>
+				<span id="ModTipAppt341915" class="HoverTip">Δ</span>
+			</td>
+			<script type="text/javascript" language="javascript">
+	new Tip('ModTipAppt341915', {
+		
+		target: $('ModTipAppt341915'),
+		ajax: {
+			url: 'ModTipText.php?t=appt&id=341915&ic='
+		},
+		hook: { target: 'leftMiddle', tip: 'rightMiddle' },
+		width: 'auto',
+		border: 2,
+		radius: 1
+	});
+		
+</script>
+		</tr>
+			<tr class="RowEven">
+			<td><center><a href="ViewAppt.php?aid=336098"><img src="graphics/View.png" height="15px" border="0"></a></center></td>
+			<td>
+				Lake Companionship
+			</td>
+			<td nowrap="">
+				2022-10-06
+			</td>
+			<td nowrap="">
+				Thu
+			</td>
+			<td nowrap="">
+				 1:00 PM
+									PDT
+							</td>
+			<td nowrap="">
+				0.50
+			</td>
+			<td nowrap="">
+				 
+			</td>
+			<td nowrap="">
+				Incall
+			</td>
+			<td nowrap="">
+				<span style="color: #000000">Complete</span>
+			</td>
+			<td nowrap="">
+															</td>
+
+			<td nowrap="">
+																	<a href="ViewContact.php?cid=849998">Mia Sky Lairette</a><br>
+							</td>
+
+			<td nowrap="">
+				$220
+			</td>
+						<td>
+				<span id="ModTipAppt336098" class="HoverTip">Δ</span>
+			</td>
+			<script type="text/javascript" language="javascript">
+	new Tip('ModTipAppt336098', {
+		
+		target: $('ModTipAppt336098'),
+		ajax: {
+			url: 'ModTipText.php?t=appt&id=336098&ic='
+		},
+		hook: { target: 'leftMiddle', tip: 'rightMiddle' },
+		width: 'auto',
+		border: 2,
+		radius: 1
+	});
+		
+</script>
+		</tr>
+			<tr class="RowOdd">
+			<td><center><a href="ViewAppt.php?aid=310548"><img src="graphics/View.png" height="15px" border="0"></a></center></td>
+			<td>
+				Lake Companionship
+			</td>
+			<td nowrap="">
+				2021-11-18
+			</td>
+			<td nowrap="">
+				Thu
+			</td>
+			<td nowrap="">
+				12:30 PM
+									PDT
+							</td>
+			<td nowrap="">
+				1.00
+			</td>
+			<td nowrap="">
+				 
+			</td>
+			<td nowrap="">
+				Incall
+			</td>
+			<td nowrap="">
+				<span style="color: #FF0000">Cancel-Them</span>
+			</td>
+			<td nowrap="">
+															</td>
+
+			<td nowrap="">
+																	<a href="ViewContact.php?cid=747317">Jocelyn V Lairette</a><br>
+							</td>
+
+			<td nowrap="">
+				$360
+			</td>
+						<td>
+				<span id="ModTipAppt310548" class="HoverTip">Δ</span>
+			</td>
+			<script type="text/javascript" language="javascript">
+	new Tip('ModTipAppt310548', {
+		
+		target: $('ModTipAppt310548'),
+		ajax: {
+			url: 'ModTipText.php?t=appt&id=310548&ic='
+		},
+		hook: { target: 'leftMiddle', tip: 'rightMiddle' },
+		width: 'auto',
+		border: 2,
+		radius: 1
+	});
+		
+</script>
+		</tr>
+			<tr class="RowEven">
+			<td><center><a href="ViewAppt.php?aid=289922"><img src="graphics/View.png" height="15px" border="0"></a></center></td>
+			<td>
+				
+			</td>
+			<td nowrap="">
+				2021-02-22
+			</td>
+			<td nowrap="">
+				Mon
+			</td>
+			<td nowrap="">
+				12:30 PM
+									PDT
+							</td>
+			<td nowrap="">
+				1.00
+			</td>
+			<td nowrap="">
+				 
+			</td>
+			<td nowrap="">
+				Incall
+			</td>
+			<td nowrap="">
+				<span style="color: #17A4DF">Complete and Verified</span>
+			</td>
+			<td nowrap="">
+															</td>
+
+			<td nowrap="">
+																	<a href="ViewContact.php?cid=765240">Maggie Lairette V</a><br>
+							</td>
+
+			<td nowrap="">
+				$250
+			</td>
+						<td>
+				<span id="ModTipAppt289922" class="HoverTip">Δ</span>
+			</td>
+			<script type="text/javascript" language="javascript">
+	new Tip('ModTipAppt289922', {
+		
+		target: $('ModTipAppt289922'),
+		ajax: {
+			url: 'ModTipText.php?t=appt&id=289922&ic='
+		},
+		hook: { target: 'leftMiddle', tip: 'rightMiddle' },
+		width: 'auto',
+		border: 2,
+		radius: 1
+	});
+		
+</script>
+		</tr>
+			<tr class="RowOdd">
+			<td><center><a href="ViewAppt.php?aid=267261"><img src="graphics/View.png" height="15px" border="0"></a></center></td>
+			<td>
+				
+			</td>
+			<td nowrap="">
+				2020-02-10
+			</td>
+			<td nowrap="">
+				Mon
+			</td>
+			<td nowrap="">
+				11:30 AM
+									PDT
+							</td>
+			<td nowrap="">
+				0.50
+			</td>
+			<td nowrap="">
+				 
+			</td>
+			<td nowrap="">
+				Incall
+			</td>
+			<td nowrap="">
+				<span style="color: #17A4DF">Complete and Verified</span>
+			</td>
+			<td nowrap="">
+															</td>
+
+			<td nowrap="">
+																	<a href="ViewContact.php?cid=364747">Gypsy Lairette</a><br>
+							</td>
+
+			<td nowrap="">
+				$225
+			</td>
+						<td>
+				<span id="ModTipAppt267261" class="HoverTip">Δ</span>
+			</td>
+			<script type="text/javascript" language="javascript">
+	new Tip('ModTipAppt267261', {
+		
+		target: $('ModTipAppt267261'),
+		ajax: {
+			url: 'ModTipText.php?t=appt&id=267261&ic='
+		},
+		hook: { target: 'leftMiddle', tip: 'rightMiddle' },
+		width: 'auto',
+		border: 2,
+		radius: 1
+	});
+		
+</script>
+		</tr>
+			<tr class="RowEven">
+			<td><center><a href="ViewAppt.php?aid=265010"><img src="graphics/View.png" height="15px" border="0"></a></center></td>
+			<td>
+				Lake Companionship
+			</td>
+			<td nowrap="">
+				2020-01-14
+			</td>
+			<td nowrap="">
+				Tue
+			</td>
+			<td nowrap="">
+				12:00 PM
+									PDT
+							</td>
+			<td nowrap="">
+				0.50
+			</td>
+			<td nowrap="">
+				 
+			</td>
+			<td nowrap="">
+				Incall
+			</td>
+			<td nowrap="">
+				<span style="color: #17A4DF">Complete and Verified</span>
+			</td>
+			<td nowrap="">
+															</td>
+
+			<td nowrap="">
+																	<a href="ViewContact.php?cid=709766">Dana Lairette</a><br>
+							</td>
+
+			<td nowrap="">
+				$225
+			</td>
+						<td>
+				<span id="ModTipAppt265010" class="HoverTip">Δ</span>
+			</td>
+			<script type="text/javascript" language="javascript">
+	new Tip('ModTipAppt265010', {
+		
+		target: $('ModTipAppt265010'),
+		ajax: {
+			url: 'ModTipText.php?t=appt&id=265010&ic='
+		},
+		hook: { target: 'leftMiddle', tip: 'rightMiddle' },
+		width: 'auto',
+		border: 2,
+		radius: 1
+	});
+		
+</script>
+		</tr>
+			<tr class="RowOdd">
+			<td><center><a href="ViewAppt.php?aid=260386"><img src="graphics/View.png" height="15px" border="0"></a></center></td>
+			<td>
+				Lake Companionship
+			</td>
+			<td nowrap="">
+				2019-11-25
+			</td>
+			<td nowrap="">
+				Mon
+			</td>
+			<td nowrap="">
+				11:30 AM
+									PDT
+							</td>
+			<td nowrap="">
+				0.50
+			</td>
+			<td nowrap="">
+				 
+			</td>
+			<td nowrap="">
+				Incall
+			</td>
+			<td nowrap="">
+				<span style="color: #17A4DF">Complete and Verified</span>
+			</td>
+			<td nowrap="">
+															</td>
+
+			<td nowrap="">
+																	<a href="ViewContact.php?cid=525438">Dee Lairette</a><br>
+							</td>
+
+			<td nowrap="">
+				$200
+			</td>
+						<td>
+				<span id="ModTipAppt260386" class="HoverTip">Δ</span>
+			</td>
+			<script type="text/javascript" language="javascript">
+	new Tip('ModTipAppt260386', {
+		
+		target: $('ModTipAppt260386'),
+		ajax: {
+			url: 'ModTipText.php?t=appt&id=260386&ic='
+		},
+		hook: { target: 'leftMiddle', tip: 'rightMiddle' },
+		width: 'auto',
+		border: 2,
+		radius: 1
+	});
+		
+</script>
+		</tr>
+			<tr class="RowEven">
+			<td><center><a href="ViewAppt.php?aid=255206"><img src="graphics/View.png" height="15px" border="0"></a></center></td>
+			<td>
+				
+			</td>
+			<td nowrap="">
+				2019-10-15
+			</td>
+			<td nowrap="">
+				Tue
+			</td>
+			<td nowrap="">
+				11:45 AM
+									PDT
+							</td>
+			<td nowrap="">
+				0.50
+			</td>
+			<td nowrap="">
+				 
+			</td>
+			<td nowrap="">
+				Incall
+			</td>
+			<td nowrap="">
+				<span style="color: #17A4DF">Complete and Verified</span>
+			</td>
+			<td nowrap="">
+															</td>
+
+			<td nowrap="">
+																	<a href="ViewContact.php?cid=690159">Georgia Lairette</a><br>
+							</td>
+
+			<td nowrap="">
+				$225
+			</td>
+						<td>
+				<span id="ModTipAppt255206" class="HoverTip">Δ</span>
+			</td>
+			<script type="text/javascript" language="javascript">
+	new Tip('ModTipAppt255206', {
+		
+		target: $('ModTipAppt255206'),
+		ajax: {
+			url: 'ModTipText.php?t=appt&id=255206&ic='
+		},
+		hook: { target: 'leftMiddle', tip: 'rightMiddle' },
+		width: 'auto',
+		border: 2,
+		radius: 1
+	});
+		
+</script>
+		</tr>
+			<tr class="RowOdd">
+			<td><center><a href="ViewAppt.php?aid=251286"><img src="graphics/View.png" height="15px" border="0"></a></center></td>
+			<td>
+				
+			</td>
+			<td nowrap="">
+				2019-09-10
+			</td>
+			<td nowrap="">
+				Tue
+			</td>
+			<td nowrap="">
+				 1:00 PM
+									PDT
+							</td>
+			<td nowrap="">
+				0.50
+			</td>
+			<td nowrap="">
+				 
+			</td>
+			<td nowrap="">
+				Incall
+			</td>
+			<td nowrap="">
+				<span style="color: #17A4DF">Complete and Verified</span>
+			</td>
+			<td nowrap="">
+															</td>
+
+			<td nowrap="">
+																	<a href="ViewContact.php?cid=690159">Georgia Lairette</a><br>
+							</td>
+
+			<td nowrap="">
+				$225
+			</td>
+						<td>
+				<span id="ModTipAppt251286" class="HoverTip">Δ</span>
+			</td>
+			<script type="text/javascript" language="javascript">
+	new Tip('ModTipAppt251286', {
+		
+		target: $('ModTipAppt251286'),
+		ajax: {
+			url: 'ModTipText.php?t=appt&id=251286&ic='
+		},
+		hook: { target: 'leftMiddle', tip: 'rightMiddle' },
+		width: 'auto',
+		border: 2,
+		radius: 1
+	});
+		
+</script>
+		</tr>
+			<tr class="RowEven">
+			<td><center><a href="ViewAppt.php?aid=247709"><img src="graphics/View.png" height="15px" border="0"></a></center></td>
+			<td>
+				
+			</td>
+			<td nowrap="">
+				2019-08-13
+			</td>
+			<td nowrap="">
+				Tue
+			</td>
+			<td nowrap="">
+				11:30 AM
+									PDT
+							</td>
+			<td nowrap="">
+				0.50
+			</td>
+			<td nowrap="">
+				 
+			</td>
+			<td nowrap="">
+				Incall
+			</td>
+			<td nowrap="">
+				<span style="color: #17A4DF">Complete and Verified</span>
+			</td>
+			<td nowrap="">
+															</td>
+
+			<td nowrap="">
+																	<a href="ViewContact.php?cid=709766">Dana Lairette</a><br>
+							</td>
+
+			<td nowrap="">
+				$200
+			</td>
+						<td>
+				<span id="ModTipAppt247709" class="HoverTip">Δ</span>
+			</td>
+			<script type="text/javascript" language="javascript">
+	new Tip('ModTipAppt247709', {
+		
+		target: $('ModTipAppt247709'),
+		ajax: {
+			url: 'ModTipText.php?t=appt&id=247709&ic='
+		},
+		hook: { target: 'leftMiddle', tip: 'rightMiddle' },
+		width: 'auto',
+		border: 2,
+		radius: 1
+	});
+		
+</script>
+		</tr>
+			<tr class="RowOdd">
+			<td><center><a href="ViewAppt.php?aid=245070"><img src="graphics/View.png" height="15px" border="0"></a></center></td>
+			<td>
+				Lake Companionship
+			</td>
+			<td nowrap="">
+				2019-07-23
+			</td>
+			<td nowrap="">
+				Tue
+			</td>
+			<td nowrap="">
+				11:30 AM
+									PDT
+							</td>
+			<td nowrap="">
+				0.50
+			</td>
+			<td nowrap="">
+				 
+			</td>
+			<td nowrap="">
+				Incall
+			</td>
+			<td nowrap="">
+				<span style="color: #17A4DF">Complete and Verified</span>
+			</td>
+			<td nowrap="">
+															</td>
+
+			<td nowrap="">
+																	<a href="ViewContact.php?cid=610295">Lo Lairette V</a><br>
+							</td>
+
+			<td nowrap="">
+				$225
+			</td>
+						<td>
+				<span id="ModTipAppt245070" class="HoverTip">Δ</span>
+			</td>
+			<script type="text/javascript" language="javascript">
+	new Tip('ModTipAppt245070', {
+		
+		target: $('ModTipAppt245070'),
+		ajax: {
+			url: 'ModTipText.php?t=appt&id=245070&ic='
+		},
+		hook: { target: 'leftMiddle', tip: 'rightMiddle' },
+		width: 'auto',
+		border: 2,
+		radius: 1
+	});
+		
+</script>
+		</tr>
+	
+	</tbody></table>
+	
+			<span class="Small">(<a href="ViewContact.php?cid=93822&amp;aa=1">&nbsp;All&nbsp;</a>)</span>
+	</div>
+
+                        </div>
+                                        
+                                            <div id="EmailDatabox" class="DataboxOuter">
+                            
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery-ui/jquery-ui.min.js"></script>
+<link href="js/jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css">
+<!-- jPList js and css  -->
+<link href="css/jplist-core.min.css" rel="stylesheet" type="text/css">
+<script src="js/jplist-core.min.js"></script>
+<!-- jplist pagination bundle -->
+<script src="js/jplist.pagination-bundle.min.js"></script>
+<link href="css/jplist-pagination-bundle.min.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+    
+        var $j = jQuery.noConflict();
+
+        $j('#pager').jplist({
+            itemsBox: '.email-tbl tbody',
+            itemPath: '.tbl-item',
+            panelPath: '.jplist-panel'
+        });
+    
+</script>
+
+
+            <h3>
+                            Email History
+                        <span class="Small"></span>
+        </h3>
+        <span class="Small">(<a href="ViewContact.php?cid=93822&amp;ae=1">&nbsp;Click Here To See Email History For This Contact&nbsp;</a>)</span>
+                            </div>
+                    
+                    
+                                            <div id="TransDatabox" class="DataboxOuter">
+                            	<div id="TransListToggle" class="SideboxOuter">
+
+	<h3>
+		Accounting
+		<span class="Small"></span>
+	</h3>
+	<div class="DataboxContainer">
+		<div class="OneLinerLeft DataboxHeader">
+							<div class="OneView OneLiner DataboxHeader">View</div>
+						<div class="OneTransDate OneLiner DataboxHeader">Date</div>
+			<div class="OneTransType OneLiner DataboxHeader">Type</div>
+			<div class="OneTransAmount OneLiner DataboxHeader">Amount</div>
+			<div class="OneTransContact OneLiner DataboxHeader">Contact</div>
+		</div>
+		<div class="OneLinerRight DataboxHeader">
+			<div class="OneLinerComment OneLiner DataboxHeader">Comment</div>
+			<div class="OneEnder DataboxHeader">
+									Δ
+							</div>
+		</div>
+		<div id="TransListbox">
+																				<div id="trans_284781" class="TransItem RowOdd">
+	<div class="OneLinerLeft">
+					<div class="OneView OneLiner">
+				<a class="OneLiner OneView" href="TransHEdit.php?tid=284781"><img src="graphics/View.png" height="15px" border="0"></a>
+			</div>
+				<div class="OneTransDate OneLiner">
+			2023-10-31
+		</div>
+		<div class="OneTransType OneLiner">
+			INCOME
+					</div>
+		<div class="OneTransAmount OneLiner">
+										49.50
+					</div>
+		<div class="OneTransContact OneLiner">
+							<a href="ViewContact.php?cid=93822">Joe BV</a>
+					</div>
+	</div>
+	<div class="OneLinerRight">
+		<div class="OneLinerComment OneLiner">
+			<a href="ViewAppt.php?aid=359926">Temescal Companionship</a>: 2023-10-31 12:30PM
+		</div>
+		<div class="OneEnder">
+							<span id="ModIconactTransH284781" class="HoverTip">Δ</span>
+					</div>
+					
+			</div>
+</div>
+																				<div id="trans_282888" class="TransItem RowEven">
+	<div class="OneLinerLeft">
+					<div class="OneView OneLiner">
+				<a class="OneLiner OneView" href="TransHEdit.php?tid=282888"><img src="graphics/View.png" height="15px" border="0"></a>
+			</div>
+				<div class="OneTransDate OneLiner">
+			2023-09-14
+		</div>
+		<div class="OneTransType OneLiner">
+			INCOME
+					</div>
+		<div class="OneTransAmount OneLiner">
+										67.50
+					</div>
+		<div class="OneTransContact OneLiner">
+							<a href="ViewContact.php?cid=93822">Joe BV</a>
+					</div>
+	</div>
+	<div class="OneLinerRight">
+		<div class="OneLinerComment OneLiner">
+			<a href="ViewAppt.php?aid=357139">Lake Companionship</a>: 2023-09-14 11:00AM
+		</div>
+		<div class="OneEnder">
+							<span id="ModIconactTransH282888" class="HoverTip">Δ</span>
+					</div>
+					
+			</div>
+</div>
+																				<div id="trans_281617" class="TransItem RowOdd">
+	<div class="OneLinerLeft">
+					<div class="OneView OneLiner">
+				<a class="OneLiner OneView" href="TransHEdit.php?tid=281617"><img src="graphics/View.png" height="15px" border="0"></a>
+			</div>
+				<div class="OneTransDate OneLiner">
+			2023-08-10
+		</div>
+		<div class="OneTransType OneLiner">
+			INCOME
+					</div>
+		<div class="OneTransAmount OneLiner">
+										67.50
+					</div>
+		<div class="OneTransContact OneLiner">
+							<a href="ViewContact.php?cid=93822">Joe BV</a>
+					</div>
+	</div>
+	<div class="OneLinerRight">
+		<div class="OneLinerComment OneLiner">
+			<a href="ViewAppt.php?aid=355185">Lake Companionship</a>: 2023-08-10 12:45PM
+		</div>
+		<div class="OneEnder">
+							<span id="ModIconactTransH281617" class="HoverTip">Δ</span>
+					</div>
+					
+			</div>
+</div>
+																				<div id="trans_280678" class="TransItem RowEven">
+	<div class="OneLinerLeft">
+					<div class="OneView OneLiner">
+				<a class="OneLiner OneView" href="TransHEdit.php?tid=280678"><img src="graphics/View.png" height="15px" border="0"></a>
+			</div>
+				<div class="OneTransDate OneLiner">
+			2023-07-18
+		</div>
+		<div class="OneTransType OneLiner">
+			INCOME
+					</div>
+		<div class="OneTransAmount OneLiner">
+										67.50
+					</div>
+		<div class="OneTransContact OneLiner">
+							<a href="ViewContact.php?cid=93822">Joe BV</a>
+					</div>
+	</div>
+	<div class="OneLinerRight">
+		<div class="OneLinerComment OneLiner">
+			<a href="ViewAppt.php?aid=353805">Lake Companionship</a>: 2023-07-18 1:00PM
+		</div>
+		<div class="OneEnder">
+							<span id="ModIconactTransH280678" class="HoverTip">Δ</span>
+					</div>
+					
+			</div>
+</div>
+																				<div id="trans_272115" class="TransItem RowOdd">
+	<div class="OneLinerLeft">
+					<div class="OneView OneLiner">
+				<a class="OneLiner OneView" href="TransHEdit.php?tid=272115"><img src="graphics/View.png" height="15px" border="0"></a>
+			</div>
+				<div class="OneTransDate OneLiner">
+			2022-12-19
+		</div>
+		<div class="OneTransType OneLiner">
+			INCOME
+					</div>
+		<div class="OneTransAmount OneLiner">
+										67.50
+					</div>
+		<div class="OneTransContact OneLiner">
+							<a href="ViewContact.php?cid=93822">Joe BV</a>
+					</div>
+	</div>
+	<div class="OneLinerRight">
+		<div class="OneLinerComment OneLiner">
+			<a href="ViewAppt.php?aid=341915">Lake Companionship</a>: 2022-12-19 12:30PM
+		</div>
+		<div class="OneEnder">
+							<span id="ModIconactTransH272115" class="HoverTip">Δ</span>
+					</div>
+					
+			</div>
+</div>
+																				<div id="trans_268510" class="TransItem RowEven">
+	<div class="OneLinerLeft">
+					<div class="OneView OneLiner">
+				<a class="OneLiner OneView" href="TransHEdit.php?tid=268510"><img src="graphics/View.png" height="15px" border="0"></a>
+			</div>
+				<div class="OneTransDate OneLiner">
+			2022-10-06
+		</div>
+		<div class="OneTransType OneLiner">
+			INCOME
+					</div>
+		<div class="OneTransAmount OneLiner">
+										49.50
+					</div>
+		<div class="OneTransContact OneLiner">
+							<a href="ViewContact.php?cid=93822">Joe BV</a>
+					</div>
+	</div>
+	<div class="OneLinerRight">
+		<div class="OneLinerComment OneLiner">
+			<a href="ViewAppt.php?aid=336098">Lake Companionship</a>: 2022-10-06 1:00PM
+		</div>
+		<div class="OneEnder">
+							<span id="ModIconactTransH268510" class="HoverTip">Δ</span>
+					</div>
+					
+			</div>
+</div>
+																				<div id="trans_251053" class="TransItem RowOdd">
+	<div class="OneLinerLeft">
+					<div class="OneView OneLiner">
+				<a class="OneLiner OneView" href="TransHEdit.php?tid=251053"><img src="graphics/View.png" height="15px" border="0"></a>
+			</div>
+				<div class="OneTransDate OneLiner">
+			2021-11-18
+		</div>
+		<div class="OneTransType OneLiner">
+			INCOME
+					</div>
+		<div class="OneTransAmount OneLiner">
+										81.00
+					</div>
+		<div class="OneTransContact OneLiner">
+							<a href="ViewContact.php?cid=93822">Joe BV</a>
+					</div>
+	</div>
+	<div class="OneLinerRight">
+		<div class="OneLinerComment OneLiner">
+			<a href="ViewAppt.php?aid=310548">Lake Companionship</a>: 2021-11-18 12:30PM
+		</div>
+		<div class="OneEnder">
+							<span id="ModIconactTransH251053" class="HoverTip">Δ</span>
+					</div>
+					
+			</div>
+</div>
+																				<div id="trans_236171" class="TransItem RowEven">
+	<div class="OneLinerLeft">
+					<div class="OneView OneLiner">
+				<a class="OneLiner OneView" href="TransHEdit.php?tid=236171"><img src="graphics/View.png" height="15px" border="0"></a>
+			</div>
+				<div class="OneTransDate OneLiner">
+			2021-02-22
+		</div>
+		<div class="OneTransType OneLiner">
+			INCOME
+					</div>
+		<div class="OneTransAmount OneLiner">
+										112.50
+					</div>
+		<div class="OneTransContact OneLiner">
+							<a href="ViewContact.php?cid=93822">Joe BV</a>
+					</div>
+	</div>
+	<div class="OneLinerRight">
+		<div class="OneLinerComment OneLiner">
+			<a href="ViewAppt.php?aid=289922">Haven Companionship</a>: 2021-02-22 12:30PM
+		</div>
+		<div class="OneEnder">
+							<span id="ModIconactTransH236171" class="HoverTip">Δ</span>
+					</div>
+					
+			</div>
+</div>
+																				<div id="trans_219333" class="TransItem RowOdd">
+	<div class="OneLinerLeft">
+					<div class="OneView OneLiner">
+				<a class="OneLiner OneView" href="TransHEdit.php?tid=219333"><img src="graphics/View.png" height="15px" border="0"></a>
+			</div>
+				<div class="OneTransDate OneLiner">
+			2020-02-10
+		</div>
+		<div class="OneTransType OneLiner">
+			INCOME
+					</div>
+		<div class="OneTransAmount OneLiner">
+										101.00
+					</div>
+		<div class="OneTransContact OneLiner">
+							<a href="ViewContact.php?cid=93822">Joe BV</a>
+					</div>
+	</div>
+	<div class="OneLinerRight">
+		<div class="OneLinerComment OneLiner">
+			<a href="ViewAppt.php?aid=267261">Haven Companionship</a>: 2020-02-10 11:30AM
+		</div>
+		<div class="OneEnder">
+							<span id="ModIconactTransH219333" class="HoverTip">Δ</span>
+					</div>
+					
+			</div>
+</div>
+																				<div id="trans_217499" class="TransItem RowEven">
+	<div class="OneLinerLeft">
+					<div class="OneView OneLiner">
+				<a class="OneLiner OneView" href="TransHEdit.php?tid=217499"><img src="graphics/View.png" height="15px" border="0"></a>
+			</div>
+				<div class="OneTransDate OneLiner">
+			2020-01-14
+		</div>
+		<div class="OneTransType OneLiner">
+			INCOME
+					</div>
+		<div class="OneTransAmount OneLiner">
+										101.00
+					</div>
+		<div class="OneTransContact OneLiner">
+							<a href="ViewContact.php?cid=93822">Joe BV</a>
+					</div>
+	</div>
+	<div class="OneLinerRight">
+		<div class="OneLinerComment OneLiner">
+			<a href="ViewAppt.php?aid=265010">Lake Companionship</a>: 2020-01-14 12:00PM
+		</div>
+		<div class="OneEnder">
+							<span id="ModIconactTransH217499" class="HoverTip">Δ</span>
+					</div>
+					
+			</div>
+</div>
+																				<div id="trans_213517" class="TransItem RowOdd">
+	<div class="OneLinerLeft">
+					<div class="OneView OneLiner">
+				<a class="OneLiner OneView" href="TransHEdit.php?tid=213517"><img src="graphics/View.png" height="15px" border="0"></a>
+			</div>
+				<div class="OneTransDate OneLiner">
+			2019-11-25
+		</div>
+		<div class="OneTransType OneLiner">
+			INCOME
+					</div>
+		<div class="OneTransAmount OneLiner">
+										90.00
+					</div>
+		<div class="OneTransContact OneLiner">
+							<a href="ViewContact.php?cid=93822">Joe BV</a>
+					</div>
+	</div>
+	<div class="OneLinerRight">
+		<div class="OneLinerComment OneLiner">
+			<a href="ViewAppt.php?aid=260386">Lake Companionship</a>: 2019-11-25 11:30AM
+		</div>
+		<div class="OneEnder">
+							<span id="ModIconactTransH213517" class="HoverTip">Δ</span>
+					</div>
+					
+			</div>
+</div>
+																				<div id="trans_209397" class="TransItem RowEven">
+	<div class="OneLinerLeft">
+					<div class="OneView OneLiner">
+				<a class="OneLiner OneView" href="TransHEdit.php?tid=209397"><img src="graphics/View.png" height="15px" border="0"></a>
+			</div>
+				<div class="OneTransDate OneLiner">
+			2019-10-15
+		</div>
+		<div class="OneTransType OneLiner">
+			INCOME
+					</div>
+		<div class="OneTransAmount OneLiner">
+										101.00
+					</div>
+		<div class="OneTransContact OneLiner">
+							<a href="ViewContact.php?cid=93822">Joe BV</a>
+					</div>
+	</div>
+	<div class="OneLinerRight">
+		<div class="OneLinerComment OneLiner">
+			<a href="ViewAppt.php?aid=255206">Haven Companionship</a>: 2019-10-15 11:45AM
+		</div>
+		<div class="OneEnder">
+							<span id="ModIconactTransH209397" class="HoverTip">Δ</span>
+					</div>
+					
+			</div>
+</div>
+																				<div id="trans_206039" class="TransItem RowOdd">
+	<div class="OneLinerLeft">
+					<div class="OneView OneLiner">
+				<a class="OneLiner OneView" href="TransHEdit.php?tid=206039"><img src="graphics/View.png" height="15px" border="0"></a>
+			</div>
+				<div class="OneTransDate OneLiner">
+			2019-09-10
+		</div>
+		<div class="OneTransType OneLiner">
+			INCOME
+					</div>
+		<div class="OneTransAmount OneLiner">
+										101.00
+					</div>
+		<div class="OneTransContact OneLiner">
+							<a href="ViewContact.php?cid=93822">Joe BV</a>
+					</div>
+	</div>
+	<div class="OneLinerRight">
+		<div class="OneLinerComment OneLiner">
+			<a href="ViewAppt.php?aid=251286">Haven Companionship</a>: 2019-09-10 1:00PM
+		</div>
+		<div class="OneEnder">
+							<span id="ModIconactTransH206039" class="HoverTip">Δ</span>
+					</div>
+					
+			</div>
+</div>
+																				<div id="trans_203020" class="TransItem RowEven">
+	<div class="OneLinerLeft">
+					<div class="OneView OneLiner">
+				<a class="OneLiner OneView" href="TransHEdit.php?tid=203020"><img src="graphics/View.png" height="15px" border="0"></a>
+			</div>
+				<div class="OneTransDate OneLiner">
+			2019-08-13
+		</div>
+		<div class="OneTransType OneLiner">
+			INCOME
+					</div>
+		<div class="OneTransAmount OneLiner">
+										90.00
+					</div>
+		<div class="OneTransContact OneLiner">
+							<a href="ViewContact.php?cid=93822">Joe BV</a>
+					</div>
+	</div>
+	<div class="OneLinerRight">
+		<div class="OneLinerComment OneLiner">
+			<a href="ViewAppt.php?aid=247709">Haven Companionship</a>: 2019-08-13 11:30AM
+		</div>
+		<div class="OneEnder">
+							<span id="ModIconactTransH203020" class="HoverTip">Δ</span>
+					</div>
+					
+			</div>
+</div>
+																				<div id="trans_200786" class="TransItem RowOdd">
+	<div class="OneLinerLeft">
+					<div class="OneView OneLiner">
+				<a class="OneLiner OneView" href="TransHEdit.php?tid=200786"><img src="graphics/View.png" height="15px" border="0"></a>
+			</div>
+				<div class="OneTransDate OneLiner">
+			2019-07-23
+		</div>
+		<div class="OneTransType OneLiner">
+			INCOME
+					</div>
+		<div class="OneTransAmount OneLiner">
+										101.00
+					</div>
+		<div class="OneTransContact OneLiner">
+							<a href="ViewContact.php?cid=93822">Joe BV</a>
+					</div>
+	</div>
+	<div class="OneLinerRight">
+		<div class="OneLinerComment OneLiner">
+			<a href="ViewAppt.php?aid=245070">Lake Companionship</a>: 2019-07-23 11:30AM
+		</div>
+		<div class="OneEnder">
+							<span id="ModIconactTransH200786" class="HoverTip">Δ</span>
+					</div>
+					
+			</div>
+</div>
+					</div>	
+	</div> <!-- END DataboxContainer -->
+                    <span class="Small">(<a href="ViewContact.php?cid=93822&amp;at=1">&nbsp;All&nbsp;</a>)</span>
+        </div> <!-- END ConnListToggle -->
+                        </div>
+                                    
+                                            <div id="NoteDatabox" class="DataboxOuter">
+                            <div class="SideboxOuter">
+<h3 id="NoteHeading" style="margin-bottom:5px;">
+	Notes
+			<a href="javascript:AjaxUpdate('NewNote_contact','EditNote.php?t=contact&amp;rid=93822&amp;title=Joe%20BV&amp;e=1')" class="Small">New Note</a>
+					- All <span class="Small"><a href="ViewContact.php?cid=93822&amp;an=1">Contact Only</a></span>
+		
+			<span class="Small"></span>
+	</h3>
+
+					<div class="DataboxContainer">
+	
+		
+                        <div id="Note_contact"><div id="NewNote_contact"></div>
+                        <div class="OneLinerNoteLeft DataboxHeader"><div class="OneView OneLiner DataboxHeader">View</div><div class="OneContactNoteDate OneLiner DataboxHeader">Date</div><div class="OneContactNoteSubject OneLiner DataboxHeader">Subject</div><div class="OneContactNoteBody OneLiner DataboxHeader">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner DataboxHeader">Source</div><div class="OneContactNoteFile OneLiner DataboxHeader">File</div></div><div class="OneLinerNoteRight DataboxHeader"><div class="OneEnder DataboxHeader">Δ</div></div>
+                                                                                        
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                                                                
+                                
+                                    
+                        
+                                <div id="note_1274719" class="RowEven">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_1274719','EditNote.php?nid=1274719&amp;ae=YES&amp;st=contact&amp;si=93822')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2023-10-31</div><div class="OneContactNoteSubject OneLiner">Kissing &amp; Licking</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner">Contact</div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote1274719" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_1268861" class="RowOdd">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_1268861','EditNote.php?nid=1268861&amp;ae=YES&amp;st=appt&amp;si=357139')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2023-09-14</div><div class="OneContactNoteSubject OneLiner">Vicky +5</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner"><a href="ViewAppt.php?aid=357139">Event</a></div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote1268861" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_1264581" class="RowEven">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_1264581','EditNote.php?nid=1264581&amp;ae=YES&amp;st=appt&amp;si=355185')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2023-08-10</div><div class="OneContactNoteSubject OneLiner">Vicky +3</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner"><a href="ViewAppt.php?aid=355185">Event</a></div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote1264581" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_1261788" class="RowOdd">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_1261788','EditNote.php?nid=1261788&amp;ae=YES&amp;st=appt&amp;si=353805')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2023-07-18</div><div class="OneContactNoteSubject OneLiner">Leila +2</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner"><a href="ViewAppt.php?aid=353805">Event</a></div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote1261788" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_1236652" class="RowEven">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_1236652','EditNote.php?nid=1236652&amp;ae=YES&amp;st=appt&amp;si=341915')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2022-12-19</div><div class="OneContactNoteSubject OneLiner">Solene +2</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner"><a href="ViewAppt.php?aid=341915">Event</a></div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote1236652" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_1224603" class="RowEven">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_1224603','EditNote.php?nid=1224603&amp;ae=YES&amp;st=appt&amp;si=336098')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2022-10-06</div><div class="OneContactNoteSubject OneLiner">Mia +2</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner"><a href="ViewAppt.php?aid=336098">Event</a></div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote1224603" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_1224615" class="RowOdd">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_1224615','EditNote.php?nid=1224615&amp;ae=YES&amp;st=contact&amp;si=93822')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2022-10-06</div><div class="OneContactNoteSubject OneLiner">Allison pls read</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner">Contact</div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote1224615" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_1133175" class="RowOdd">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_1133175','EditNote.php?nid=1133175&amp;ae=YES&amp;st=appt&amp;si=289922')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2021-02-22</div><div class="OneContactNoteSubject OneLiner">Booked at 300 instead of 250</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner"><a href="ViewAppt.php?aid=289922">Event</a></div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote1133175" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_1133179" class="RowEven">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_1133179','EditNote.php?nid=1133179&amp;ae=YES&amp;st=appt&amp;si=289922')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2021-02-22</div><div class="OneContactNoteSubject OneLiner">ALLISON READ</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner"><a href="ViewAppt.php?aid=289922">Event</a></div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote1133179" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_1133184" class="RowOdd">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_1133184','EditNote.php?nid=1133184&amp;ae=YES&amp;st=appt&amp;si=289922')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2021-02-22</div><div class="OneContactNoteSubject OneLiner">Maggie +4</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner"><a href="ViewAppt.php?aid=289922">Event</a></div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote1133184" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_1081560" class="RowEven">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_1081560','EditNote.php?nid=1081560&amp;ae=YES&amp;st=appt&amp;si=267261')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2020-02-10</div><div class="OneContactNoteSubject OneLiner">Gypsy +4</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner"><a href="ViewAppt.php?aid=267261">Event</a></div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote1081560" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_1075098" class="RowOdd">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_1075098','EditNote.php?nid=1075098&amp;ae=YES&amp;st=appt&amp;si=265010')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2020-01-14</div><div class="OneContactNoteSubject OneLiner">Dana +4</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner"><a href="ViewAppt.php?aid=265010">Event</a></div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote1075098" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_1065972" class="RowEven">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_1065972','EditNote.php?nid=1065972&amp;ae=YES&amp;st=appt&amp;si=260386')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2019-11-25</div><div class="OneContactNoteSubject OneLiner">Dee +1</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner"><a href="ViewAppt.php?aid=260386">Event</a></div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote1065972" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_1057083" class="RowOdd">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_1057083','EditNote.php?nid=1057083&amp;ae=YES&amp;st=contact&amp;si=93822')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2019-10-15</div><div class="OneContactNoteSubject OneLiner">Georgia +3</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner">Contact</div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote1057083" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_1050000" class="RowEven">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_1050000','EditNote.php?nid=1050000&amp;ae=YES&amp;st=appt&amp;si=251286')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2019-09-10</div><div class="OneContactNoteSubject OneLiner">Georgia +3</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner"><a href="ViewAppt.php?aid=251286">Event</a></div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote1050000" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_1043431" class="RowOdd">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_1043431','EditNote.php?nid=1043431&amp;ae=YES&amp;st=appt&amp;si=247709')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2019-08-13</div><div class="OneContactNoteSubject OneLiner">Dana+3</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner"><a href="ViewAppt.php?aid=247709">Event</a></div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote1043431" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_1038304" class="RowEven">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_1038304','EditNote.php?nid=1038304&amp;ae=YES&amp;st=appt&amp;si=245070')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2019-07-23</div><div class="OneContactNoteSubject OneLiner">Lo +3</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner"><a href="ViewAppt.php?aid=245070">Event</a></div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote1038304" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_976443" class="RowOdd">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_976443','EditNote.php?nid=976443&amp;ae=YES&amp;st=contact&amp;si=93822')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2019-01-07</div><div class="OneContactNoteSubject OneLiner">LOFT Arrival protocol</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner">Contact</div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote976443" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_931889" class="RowEven">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_931889','EditNote.php?nid=931889&amp;ae=YES&amp;st=contact&amp;si=93822')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2018-07-16</div><div class="OneContactNoteSubject OneLiner">Sahara +2</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner">Contact</div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote931889" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_926023" class="RowOdd">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_926023','EditNote.php?nid=926023&amp;ae=YES&amp;st=contact&amp;si=93822')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2018-06-19</div><div class="OneContactNoteSubject OneLiner">CREDIT $50.  ...ALLISON</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner">Contact</div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote926023" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_920401" class="RowEven">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_920401','EditNote.php?nid=920401&amp;ae=YES&amp;st=contact&amp;si=93822')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2018-05-22</div><div class="OneContactNoteSubject OneLiner">Monica +3</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner">Contact</div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote920401" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_911022" class="RowOdd">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_911022','EditNote.php?nid=911022&amp;ae=YES&amp;st=contact&amp;si=93822')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2018-04-10</div><div class="OneContactNoteSubject OneLiner">Adora +1</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner">Contact</div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote911022" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_888413" class="RowEven">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_888413','EditNote.php?nid=888413&amp;ae=YES&amp;st=contact&amp;si=93822')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2018-01-02</div><div class="OneContactNoteSubject OneLiner">Tamar  +4</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner">Contact</div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote888413" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_879315" class="RowOdd">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_879315','EditNote.php?nid=879315&amp;ae=YES&amp;st=contact&amp;si=93822')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2017-11-16</div><div class="OneContactNoteSubject OneLiner">Julie</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner">Contact</div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote879315" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_873794" class="RowEven">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_873794','EditNote.php?nid=873794&amp;ae=YES&amp;st=contact&amp;si=93822')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2017-10-30</div><div class="OneContactNoteSubject OneLiner">pepper</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner">Contact</div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote873794" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_868815" class="RowOdd">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_868815','EditNote.php?nid=868815&amp;ae=YES&amp;st=contact&amp;si=93822')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2017-10-16</div><div class="OneContactNoteSubject OneLiner">Emma</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner">Contact</div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote868815" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_850452" class="RowEven">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_850452','EditNote.php?nid=850452&amp;ae=YES&amp;st=contact&amp;si=93822')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2017-08-15</div><div class="OneContactNoteSubject OneLiner">Katniss</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner">Contact</div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote850452" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_837784" class="RowOdd">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_837784','EditNote.php?nid=837784&amp;ae=YES&amp;st=contact&amp;si=93822')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2017-07-13</div><div class="OneContactNoteSubject OneLiner">Katniss</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner">Contact</div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote837784" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_414960" class="RowEven">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_414960','EditNote.php?nid=414960&amp;ae=YES&amp;st=contact&amp;si=93822')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2016-07-08</div><div class="OneContactNoteSubject OneLiner">With Gypsy</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner">Contact</div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote414960" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_410179" class="RowOdd">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_410179','EditNote.php?nid=410179&amp;ae=YES&amp;st=contact&amp;si=93822')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2016-06-27</div><div class="OneContactNoteSubject OneLiner">With Gypsy</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner">Contact</div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote410179" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_330879" class="RowEven">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_330879','EditNote.php?nid=330879&amp;ae=YES&amp;st=contact&amp;si=93822')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2016-02-08</div><div class="OneContactNoteSubject OneLiner">Session with Mimi and Rich</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner">Contact</div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote330879" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_213776" class="RowOdd">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_213776','EditNote.php?nid=213776&amp;ae=YES&amp;st=contact&amp;si=93822')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2015-03-23</div><div class="OneContactNoteSubject OneLiner">look out for the crazy open mouthed kissing</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner">Contact</div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote213776" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_197525" class="RowEven">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_197525','EditNote.php?nid=197525&amp;ae=YES&amp;st=contact&amp;si=93822')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2014-12-15</div><div class="OneContactNoteSubject OneLiner">Gorgeous Man</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner">Contact</div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote197525" class="HoverTip">Δ</span></div></div>
+                </div><div id="note_149004" class="RowOdd">
+                    <div class="OneLinerNoteLeft"><div class="OneView OneLiner"><a class="OneLiner" href="javascript:AjaxUpdate('note_149004','EditNote.php?nid=149004&amp;ae=YES&amp;st=contact&amp;si=93822')"><img src="graphics/IconClosed.png" height="13px" width="13px" border="0"></a></div><div class="OneContactNoteDate OneLiner">2014-01-06</div><div class="OneContactNoteSubject OneLiner">requested a hour on phone and left in thirty min paying for the hh</div><div class="OneContactNoteBody OneLiner">Sint cupidatat elit laboris cupidatat quis labore.</div><div class="OneContactNoteSource OneLiner">Contact</div><div class="OneContactNoteFile OneLiner"></div></div><div class="OneLinerNoteRight"><div class="OneEnder"><span id="ModIconNote149004" class="HoverTip">Δ</span></div></div>
+                </div></div>		
+		
+	</div>
+</div>
+                        </div>
+                    
+                <script>
+
+    function setStates(country) {
+
+
+        var states = '{"AL":"Alabama","AK":"Alaska","AZ":"Arizona","AR":"Arkansas","CA":"California","CO":"Colorado","CT":"Connecticut","DE":"Delaware","DC":"District of Columbia","FL":"Florida","GA":"Georgia","HI":"Hawaii","ID":"Idaho","IL":"Illinois","IN":"Indiana","IA":"Iowa","KS":"Kansas","KY":"Kentucky","LA":"Louisiana","ME":"Maine","MD":"Maryland","MA":"Massachusetts","MI":"Michigan","MN":"Minnesota","MS":"Mississippi","MO":"Missouri","MT":"Montana","NE":"Nebraska","NV":"Nevada","NH":"New Hampshire","NJ":"New Jersey","NM":"New Mexico","NY":"New York","NC":"North Carolina","ND":"North Dakota","OH":"Ohio","OK":"Oklahoma","OR":"Oregon","PA":"Pennsylvania","RI":"Rhode Island","SC":"South Carolina","SD":"South Dakota","TN":"Tennessee","TX":"Texas","UT":"Utah","VT":"Vermont","VA":"Virginia","WA":"Washington","WV":"West Virginia","WI":"Wisconsin","WY":"Wyoming","XX":"[USA - All States]","AB":"Alberta","BC":"British Columbia","MB":"Manitoba","NB":"New Brunswick","NL":"Newfoundland","NS":"Nova Scotia","ON":"Ontario","PE":"Prince Edward Island","QC":"Quebec","SK":"Saskatchewan"}';
+
+        $j('#state').empty();
+
+        switch(country) {
+
+            case 'USA':
+                states = '{"*":"Select a State","AL":"Alabama","AK":"Alaska","AZ":"Arizona","AR":"Arkansas","CA":"California","CO":"Colorado","CT":"Connecticut","DE":"Delaware","DC":"District of Columbia","FL":"Florida","GA":"Georgia","HI":"Hawaii","ID":"Idaho","IL":"Illinois","IN":"Indiana","IA":"Iowa","KS":"Kansas","KY":"Kentucky","LA":"Louisiana","ME":"Maine","MD":"Maryland","MA":"Massachusetts","MI":"Michigan","MN":"Minnesota","MS":"Mississippi","MO":"Missouri","MT":"Montana","NE":"Nebraska","NV":"Nevada","NH":"New Hampshire","NJ":"New Jersey","NM":"New Mexico","NY":"New York","NC":"North Carolina","ND":"North Dakota","OH":"Ohio","OK":"Oklahoma","OR":"Oregon","PA":"Pennsylvania","RI":"Rhode Island","SC":"South Carolina","SD":"South Dakota","TN":"Tennessee","TX":"Texas","UT":"Utah","VT":"Vermont","VA":"Virginia","WA":"Washington","WV":"West Virginia","WI":"Wisconsin","WY":"Wyoming","XX":"[USA - All States]","AB":"Alberta","BC":"British Columbia","MB":"Manitoba","NB":"New Brunswick","NL":"Newfoundland","NS":"Nova Scotia","ON":"Ontario","PE":"Prince Edward Island","QC":"Quebec","SK":"Saskatchewan"}';
+                $j('#state')
+                        .append($j("<option></option>")
+                                .attr("value",'*')
+                                .text('Select State'));
+                break;
+
+            case 'CAN':
+                states = '{"*":"Select a State","AL":"Alabama","AK":"Alaska","AZ":"Arizona","AR":"Arkansas","CA":"California","CO":"Colorado","CT":"Connecticut","DE":"Delaware","DC":"District of Columbia","FL":"Florida","GA":"Georgia","HI":"Hawaii","ID":"Idaho","IL":"Illinois","IN":"Indiana","IA":"Iowa","KS":"Kansas","KY":"Kentucky","LA":"Louisiana","ME":"Maine","MD":"Maryland","MA":"Massachusetts","MI":"Michigan","MN":"Minnesota","MS":"Mississippi","MO":"Missouri","MT":"Montana","NE":"Nebraska","NV":"Nevada","NH":"New Hampshire","NJ":"New Jersey","NM":"New Mexico","NY":"New York","NC":"North Carolina","ND":"North Dakota","OH":"Ohio","OK":"Oklahoma","OR":"Oregon","PA":"Pennsylvania","RI":"Rhode Island","SC":"South Carolina","SD":"South Dakota","TN":"Tennessee","TX":"Texas","UT":"Utah","VT":"Vermont","VA":"Virginia","WA":"Washington","WV":"West Virginia","WI":"Wisconsin","WY":"Wyoming","XX":"[USA - All States]","AB":"Alberta","BC":"British Columbia","MB":"Manitoba","NB":"New Brunswick","NL":"Newfoundland","NS":"Nova Scotia","ON":"Ontario","PE":"Prince Edward Island","QC":"Quebec","SK":"Saskatchewan"}';
+                        $j('#state')
+                                .append($j("<option></option>")
+                                        .attr("value",'*')
+                                        .text('Select State'));
+                break;
+
+            default:
+        }
+
+
+        $j.each($j.parseJSON(states), function(key, value) {
+            $j('#state')
+                    .append($j("<option></option>")
+                            .attr("value",key)
+                            .text(value));
+            });
+        }
+</script>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div> <!-- PageContent -->
+
+        </div> <!-- Folder -->
+
+        <div id="footer">
+            <div>
+                <div>
+                    <center>
+                                                     <table width="80%" border="0" cellpadding="6"><tbody><tr><td><a href="index.php?pg=PrivacyPolicy">Privacy Policy</a></td><td><a href="index.php?pg=TermsOfUse">Terms Of Use</a></td><td><a href="index.php?pg=LegalStatement">Legal Statement</a></td><td> <a href="index.php?pg=SiteMap">Site Map</a> </td><td> <a href="Banners.php">Banners</a> </td></tr></tbody></table>
+                                            </center>
+                </div>
+            </div>
+        </div>
+
+
+    </div> <!-- HeaderWidthHolder -->
+    <center>
+        <div style="font-size: 10px;"><p>Copyright © 2006-2022.  <strong>Safe Office</strong> <span class="caps">SDM</span>, Ltd. All rights reserved.</p></div>
+    </center>
+</div> <!-- header -->
+
+
+<script language="JavaScript" type="text/javascript">
+
+function MoreLessToggle(sDatabox,sText) {
+	// Fields to Toggle...
+	
+	switch(sDatabox) {
+	case 'board' :
+		break;
+	case 'contact' :
+		break;
+	case 'contacttype' :
+		break;
+	case 'email' :
+		break;
+	case 'note' :
+		break;
+	case 'permission' :
+		break;
+	case 'phone' :
+		$('phone_type').toggle();
+		$('phone_intl_yn').toggle();
+		break;
+	case 'region' :
+		break;
+	case 'website' :
+		break;
+	}
+
+
+	// Toggle the More/Less Link Text...
+	var sNewText = 'More';
+	var sImg = "<img src='graphics/Less.png' height=24px width=24px border=0>";
+	if (sText == 'More') {
+		sNewText = 'Less';
+		sImg = "<img src='graphics/More.png' height=24px width=24px border=0>";
+	}
+	var sLink = "<a id='" + sDatabox + "Toggle' href='javascript:MoreLessToggle(" + '"' + sDatabox + '","' + sNewText + '"' + ")'>" + sImg + "</a>";
+
+	// Change the More/Less link...
+	var sToggleId = sDatabox + 'Toggle';
+	$(sToggleId).replace(sLink);
+}
+
+</script>
+<script language="JavaScript" type="text/javascript">
+
+function MoreLessSideBarToggle(sText) {
+	// Fields to Toggle...
+	
+	$('Sidebar_permission').toggle();
+	new Effect.Highlight('Sidebar_permission');
+
+
+	// Toggle the More/Less Link Text...
+	var sNewText = 'More';
+	var sImg = "<img src='graphics/Less.png' height=24px width=24px border=0>";
+	if (sText == 'More') {
+		sNewText = 'Less';
+		sImg = "<img src='graphics/More.png' height=24px width=24px border=0>";
+	}
+	var sLink = "<a id='SideBarToggle' href='javascript:MoreLessSideBarToggle(" + '"' + sNewText + '"' + ")'>" + sImg + "</a>";
+
+	// Change the More/Less link...
+	$('SideBarToggle').replace(sLink);
+}
+
+</script>
+
+<!--TextPlugin Modal Window -->
+<script type="text/javascript" language="javascript" charset="utf-8">
+    $$('.TextPlugModal').each(function (link) {
+        Modal = new Control.Modal(link, {
+            iframe: true,
+            width: 400,
+            height: 500,
+            fade: true,
+            overlayCloseOnClick: true
+            });
+        });
+
+    <!--PM Modal Window -->
+
+    $$('.PmModal').each(function (link) {
+        Modal = new Control.Modal(link, {
+            iframe: true,
+            width: 450,
+            height: 500,
+            fade: true,
+            overlayCloseOnClick: true
+            });
+        });
+
+    <!-- Login Modal Window -->
+    $$('.LoginModal').each(function (link) {
+        Modal = new Control.Modal(link, {
+            iframe: true,
+            width: 300,
+            height: 200,
+            fade: true,
+            overlayCloseOnClick: true
+            });
+        });
+
+    $$('.FileSearchModal').each(function (link) {
+        Modal = new Control.Modal(link, {
+            iframe: true,
+            width: 600,
+            height: 500,
+            fade: true,
+            overlayCloseOnClick: true
+            });
+        });
+
+    $$('.LiveSearchModal').each(function (link) {
+        Modal = new Control.Modal(link, {
+            iframe: true,
+            width: 600,
+            height: 500,
+            fade: true,
+            overlayCloseOnClick: true
+            });
+        });
+
+    // Open Help Window (Keep here because HELP window will use a duplicate function name)
+    function OpenHelp(sPageId) {
+        var iHeight = 600;
+        var iWidth = 510;
+        var iTop = 0;
+        var iLeft = 0;
+        var sWindowName = 'HelpWindow';
+        var sUrl = 'help.php?pg=' + sPageId;
+
+        var sChrome = "resizable,scrollbars" +
+                ",height=" + iHeight +
+                ",width=" + iWidth +
+                ",top=" + iTop +
+                ",left=" + iLeft;
+        oHelpWindow = window.open(sUrl, sWindowName, sChrome);
+        oHelpWindow.focus();
+        }
+
+    function GhostedMsg() {
+        alert('You do not have the required permissions to access this option.');
+        }
+</script>
+
+<script language="JavaScript" type="text/javascript" src="wz_tooltip.js"></script>
+
+
+
+<div id="modal_overlay" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 9998; display: none;"></div><div id="modal_container" style="display: none;"></div><div id="modal_loading" style="display: none;"></div></body></html>
