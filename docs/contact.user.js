@@ -25,7 +25,7 @@ function createSummaryBar() {
   let summaryBar = $y('<div id="summaryBar" style="padding: 10px; background-color: #f0f0f0;"></div>');
   sortedProviders.forEach(providerName => {
     let avgRating = (providers[providerName].totalRating / providers[providerName].count).toFixed(1);
-    let ratingEmoji = avgRating >= 0 ? '👍' : '👎';
+    let ratingEmoji = avgRating >= 0 ? '👍 (' + providers[providerName].count + ')' : '👎 (' + providers[providerName].count + ')';
     summaryBar.append('<div>' + providerName + ': ' + ratingEmoji + '</div>');
   });
 
