@@ -6,7 +6,7 @@ function createSummaryBar() {
   // Find all notes and extract provider names and ratings
   $y('div.OneContactNoteSubject').each(function() {
     let noteText = $y(this).text();
-    let providerMatch = noteText.match(/(\w+)\s\+(\d+)|(\w+)\s\-(\d+)|(\w+)\sNO/gi); // Added 'i' flag for case-insensitivity
+    let providerMatch = noteText.match(/(\w+)\s\+(\d+)|(\w+)\s\-(\d+)|(\w+)\sNO/gi); // Updated regular expression
     if (providerMatch) {
       for (let i = 1; i < providerMatch.length; i += 2) {
         if (providerMatch[i]) {
