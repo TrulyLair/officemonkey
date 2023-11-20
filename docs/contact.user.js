@@ -8,18 +8,22 @@ function createSummaryBar() {
     let noteText = $y(this).text();
     let providerMatch = noteText.match(/(\w+)\s\+(\d+)|(\w+)\s\-(\d+)|(\w+)\sNO/gi); // Added 'i' flag for case-insensitivity
     if (providerMatch) {
-      let providerName = providerMatch[1] || providerMatch[3] || providerMatch[5];
-      let rating = providerMatch[4] ? -parseInt(providerMatch[4], 10) : -3;
-      if (!providers[providerName]) {
-        providers[providerName] = { totalRating: 0, count: 0, hasNegative: false, latestRating: 0 };
-      }
-      providers[providerName].totalRating += rating;
-      providers[providerName].count++;
-      if (rating < 0) {
-        providers[providerName].hasNegative = true;
-        providers[providerName].latestRating = rating;
-      } else {
-        providers[providerName].latestRating = Math.max(providers[providerName].latestRating, rating);
+      for (let i = 1; i < providerMatch.length; i += 2) {
+        if (providerMatch[i]) {
+          let providerName = providerMatch[i];
+          let rating = providerMatch[i + 1] ? parseInt(providerMatch[i + 1], 10) : -3;
+          if (!providers[providerName]) {
+            providers[providerName] = { totalRating: 0, count: 0, hasNegative: false, latestRating: 0 };
+          }
+          providers[providerName].totalRating += rating;
+          providers[providerName].count++;
+          if (rating < 0) {
+            providers[providerName].hasNegative = true;
+            providers[providerName].latestRating = rating;
+          } else {
+            providers[providerName].latestRating = Math.max(providers[providerName].latestRating, rating);
+          }
+        }
       }
     }
   });
