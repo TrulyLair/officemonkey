@@ -343,14 +343,14 @@ function addGMailClickListeners() {
 function formatEventDetails(evd) {
   let [, type, date, day, time, dur, , , status, , ext, booked] = evd.map(x => x.innerText.strip());
   if (status != "Same Day" && status != "Unconfirmed") {
-      if (!confirm(`Looks like this event isn't in a 'Same Day' or 'Unconfirmed' status - I see ${status}. Want to continue anyway?`)) {
-          throw new Error("User clicked Cancel on wrong status");
-      }
+    if (!confirm(`Looks like this event isn't in a 'Same Day' or 'Unconfirmed' status - I see ${status}. Want to continue anyway?`)) {
+        throw new Error("User clicked Cancel on wrong status");
+    }
   }
   if (new Date(date + " " + time) < Date.now()) {
-      if (!confirm(`Looks like this event is in the past (I see ${date + " " + time}). Want to continue anyway?`)) {
-          throw new Error("User clicked Cancel on past date");
-      }
+    if (!confirm(`Looks like this event is in the past (I see ${date + " " + time}). Want to continue anyway?`)) {
+        throw new Error(`User clicked Cancel on past date (event date: ${date}) (event time: ${time}) (Date.now(): ${Date.now()})`);
+    }
   }
   let loc = type.split(/\s+/)[0]; // "Lake" or "Temescal"
   let locationName = {
