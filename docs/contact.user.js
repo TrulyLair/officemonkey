@@ -32,7 +32,9 @@ function init(e) {
       // sort notes by date
       performNoteSort(NOTES);
       hoverNotes(NOTES);
-      createSummaryBar();
+      // Keeping the Summary Bar disabled until after the new Notes form
+      // is working and producing data
+      // createSummaryBar();
     }
     // table fixes
     hoverTableRows();
@@ -63,16 +65,19 @@ function createSummaryBar() {
   // Find all notes and extract provider names and ratings
   $y('div.OneContactNoteSubject').each(function() {
     let noteText = $y(this).text();
-    let providerRegex = /(\w+)\s\+(\d+)|(\w+)\s\-(\d+)|(\w+)\sNO/gi;
+    // TODO: handle "DO NOT BOOK" notes (See VW for example)
+    let providerRegex = /(\w+)\s\+(\d+)|(\w+)\s\-(\d+)|(\w+)\bNO\b|/gi;
     let providerMatch;
     while ((providerMatch = providerRegex.exec(noteText)) !== null) {
-      let providerName = (providerMatch[1] || providerMatch[3] || providerMatch[5]).toLowerCase().replace(/\b\w/g, firstChar => firstChar.toUpperCase());      let rating = providerMatch[2] ? parseInt(providerMatch[2], 10) : (providerMatch[4] ? -parseInt(providerMatch[4], 10) : -3);
+      let providerName = (providerMatch[1] || providerMatch[3] || providerMatch[5])
+        .toLowerCase().replace(/\b\w/g, firstChar => firstChar.toUpperCase());
+      let rating = providerMatch[2] ? parseInt(providerMatch[2], 10) : (providerMatch[4] ? -parseInt(providerMatch[4], 10) : -3);
       if (!providers[providerName]) {
         providers[providerName] = { totalRating: 0, count: 0, hasNegative: false, latestRating: 0 };
       }
       providers[providerName].totalRating += rating;
       providers[providerName].count++;
-      if (rating < 0) {
+      if (rating < -1) {
         providers[providerName].hasNegative = true;
         providers[providerName].latestRating = rating;
       } else {
@@ -86,6 +91,8 @@ function createSummaryBar() {
 
   // Create the summary bar element
   let summaryBar = $y('<div id="summaryBar" style="padding: 10px; background-color: #f0f0f0;"></div>');
+  summaryBar.append('<div><b>Provider ratings (avg)</b><hr></div>');
+  summaryBar.append('<div>⚠️ BETA ⚠️</div>');
   sortedProviders.forEach(providerName => {
     let avgRating = Math.round(providers[providerName].totalRating / providers[providerName].count);
     let ratingDisplay = providers[providerName].hasNegative ? providers[providerName].latestRating : avgRating;
