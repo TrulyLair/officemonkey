@@ -5,11 +5,11 @@
 // @grant       GM.addStyle
 // @grant       GM.setClipboard
 // @grant       GM.openInTab
-// @version     0.3.9
+// @version     0.5.0
 // @author      -
 // @description 2023-11-17, 16:40:00 PM
-// @homepageURL https://yozlet.gitlab.io/send-email-bookmarklet/
-// @downloadURL https://yozlet.gitlab.io/send-email-bookmarklet/contact.user.js
+// @homepageURL https://trulylair.github.io/officemonkey/
+// @downloadURL https://trulylair.github.io/officemonkey/contact.user.js
 // @require     https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js
 //
 // ==/UserScript==
@@ -370,6 +370,59 @@ Rate: ${rate}<br>
 `;
   return [htmlBlock, subject];
 }
+
+// EventNoteFormHTML: used by replaceEventNoteForm()
+const EventNoteFormHTML = `<table cellpadding="0" cellspacing="0" width="650px">
+<tbody><tr>
+  <th width="100px" id="HB_NOTE_Subject">Provider</th>
+  <td colspan="2">
+  </td>
+  <th width="100px" id="HB_NOTE_Subject">Special booking note</th>
+
+  <th width="100px" id="HB_NOTE_Subject">Special booking note</th>
+  <td colspan="2">
+            <input type="text" class="WideInputField" name="special_booking_note" maxlen="255" value="">
+    <span class="Loud"></span>
+          </td>
+</tr>
+      <tr>
+  <th valign="top" width="100px" id="HB_NOTE_Body">Session notes</th>
+
+  <td colspan="2">
+                                <textarea name="session_notes" class="WideInputField"></textarea>
+    <span class="Loud"></span>
+          </td>
+</tr>
+
+
+    
+<tr>
+  <th width="100px" id="HB_NOTE_DateTime">Date Time</th>
+
+  <td colspan="2">
+            <input type="text" class="InputField" name="time_ordering" maxlen="10" value="2023-11-27 17:38:34">
+        </td></tr>
+
+
+<tr>
+  <th></th>
+  <td class="Footer">
+          <div id="GoButton_NewNote_appt" class="clear"><a class="button" href="javascript:AjaxFormSubmit('NoteForm_','NewNote_appt','EditNote.php?e=1&amp;ae=');UpdateContent('GoButton_NewNote_appt','Processing...')"><span>Save</span></a></div>
+        <input type="hidden" name="Submitted" value="1">
+
+    <!-- the usual form fields -->
+    <input type="hidden" name="body" value="">
+    <input type="hidden" name="subject" value="">
+    <!-- and the normally-hidden ones -->
+    <input type="hidden" name="nid" value="">
+    <input type="hidden" name="t" value="appt">
+    <input type="hidden" name="rid" value="352531">
+    <input type="hidden" name="title" value="352531">
+  </td>
+  <td class="Footer" align="right">
+  </td>
+</tr>
+ </tbody></table>`;
 
 
 init();
