@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        SafeOffice general fixes
+// @name        OfficeMonkey general fixes
 // @namespace   Violentmonkey Scripts
 // @match       https://safeoffice.com/*
 // @grant       GM.addStyle
