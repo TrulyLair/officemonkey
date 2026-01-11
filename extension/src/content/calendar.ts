@@ -45,12 +45,38 @@ let tooltip: any = null;
 async function init(): Promise<void> {
   try {
     // Wait for jQuery to be available (both $ and $j from the site)
+    // Use a check that won't be broken by minification
+    // Increased timeout to 15 seconds to account for slow page loads
     const jqueryReady = await waitForCondition(() => {
-      return typeof window.$ !== 'undefined' && typeof window.$j !== 'undefined';
-    }, 10000);
+      try {
+        // Check if $ and $j exist and are functions/objects (not undefined)
+        const win = window as any;
+        const hasDollar = win.$ != null;
+        const hasDollarJ = win.$j != null;
+        
+        // Debug logging (can be removed in production)
+        if (!hasDollar || !hasDollarJ) {
+          // Only log once per second to avoid spam
+          const now = Date.now();
+          if (!(window as any).__omLastJQueryCheck || now - (window as any).__omLastJQueryCheck > 1000) {
+            (window as any).__omLastJQueryCheck = now;
+            console.log('OfficeMonkey: Waiting for jQuery...', { has$: hasDollar, has$j: hasDollarJ });
+          }
+        }
+        
+        return hasDollar && hasDollarJ;
+      } catch {
+        return false;
+      }
+    }, 15000);
 
     if (!jqueryReady) {
-      console.error('OfficeMonkey: jQuery not available after timeout');
+      const win = window as any;
+      console.error('OfficeMonkey: jQuery not available after timeout', {
+        has$: win.$ != null,
+        has$j: win.$j != null,
+        hasjQuery: win.jQuery != null,
+      });
       return;
     }
 
@@ -108,7 +134,8 @@ function performCalendarScript(): void {
  */
 function getTooltip($y: JQuery): any {
   // Use site's $j for qtip (it has qtip2 plugin)
-  if (window.$j && typeof window.$j.fn.qtip !== 'undefined') {
+  // Use a check that won't be broken by minification
+  if (window.$j && window.$j.fn.qtip != null) {
     return window.$j('<div/>').qtip({
       id: 'calendar',
       prerender: true,
@@ -176,7 +203,8 @@ function makeCalendar($y: JQuery, tooltip: any): void {
       const savedDate = result.ApptCal_defaultDate || defaultDate;
 
       // Initialize FullCalendar
-      if (typeof $y.fn.fullCalendar === 'undefined') {
+      // Use a check that won't be broken by minification
+      if ($y.fn.fullCalendar == null) {
         console.error('OfficeMonkey: FullCalendar not loaded');
         return;
       }
