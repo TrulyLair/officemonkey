@@ -251,10 +251,12 @@ describe('Contact Utilities', () => {
     it('should validate event date is not in the past', () => {
       // Should check if event date is in the future
       // Should show confirm dialog if in the past
-      const eventDate = new Date('2024-01-20 14:00:00');
+      // Use a date in the future (1 year from now)
+      const futureDate = new Date();
+      futureDate.setFullYear(futureDate.getFullYear() + 1);
       const now = new Date();
       
-      expect(eventDate > now).toBe(true); // For future dates
+      expect(futureDate > now).toBe(true); // For future dates
     });
   });
 
