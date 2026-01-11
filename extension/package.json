@@ -9,6 +9,7 @@
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest --coverage",
+    "test:build": "npm run build && npm test",
     "lint": "tsc --noEmit"
   },
   "keywords": [
